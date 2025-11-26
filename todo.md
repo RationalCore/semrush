@@ -1,0 +1,4 @@
+Напиши обертку для semrush.com которая реализует альтернативное API, внутри используя playwright для отработки API вызовов. Требуется реализовать две функции: https://www.semrush.com/analytics/keywordoverview/ и https://www.semrush.com/analytics/keywordmagic/. На входе ключевые слова и возвращает ответ в json-формате. Все ответы по US.
+Semrush login: akiereisen4133@hotmail.com Password: BrsJRi1TVghS
+Обращайся к semrush.com исключительно через прокси http://38.152.62.207:8000:jJPfHX:nuUCJ0
+Не используй mcp playwright tool для обращения к semrush.com поскольку он не работает через прокси. Вместо этого собирай необходимую для разраотки информацию через установленный playwright используя предоставленный прокси.
