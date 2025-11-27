@@ -1,4 +1,6 @@
 const { chromium } = require('playwright');
+const fs = require('fs').promises;
+const path = require('path');
 const config = require('./config');
 
 class SemrushScraper {
@@ -7,11 +9,145 @@ class SemrushScraper {
     this.context = null;
     this.page = null;
     this.isLoggedIn = false;
+    this.cookiesPath = path.join(__dirname, 'cookies.json');
 
     // Load configuration
     this.username = config.semrush.username;
     this.password = config.semrush.password;
     this.proxy = config.proxy;
+  }
+
+  /**
+   * Выполняет операцию с повторными попытками при сетевых ошибках
+   */
+  async retryOperation(operation, maxRetries = 3, delay = 2000) {
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        return await operation();
+      } catch (error) {
+        const isNetworkError = error.message.includes('ERR_CONNECTION_RESET') ||
+                              error.message.includes('ERR_NETWORK_CHANGED') ||
+                              error.message.includes('net::') ||
+                              error.message.includes('Navigation timeout');
+
+        if (isNetworkError && attempt < maxRetries - 1) {
+          console.log(`Network error on attempt ${attempt + 1}, retrying in ${delay}ms...`);
+          await new Promise(resolve => setTimeout(resolve, delay));
+          delay *= 2; // Exponential backoff
+          continue;
+        }
+
+        throw error;
+      }
+    }
+  }
+
+  /**
+   * Сохраняет куки в файл после успешного логина
+   */
+  async saveCookies() {
+    try {
+      if (!this.context) {
+        console.log('Browser context not initialized, cannot save cookies');
+        return;
+      }
+
+      const cookies = await this.context.cookies();
+      const cookieData = {
+        cookies: cookies,
+        timestamp: new Date().toISOString(),
+        username: this.username
+      };
+
+      await fs.writeFile(this.cookiesPath, JSON.stringify(cookieData, null, 2));
+      console.log(`Cookies saved to ${this.cookiesPath}`);
+    } catch (error) {
+      console.warn('Failed to save cookies:', error.message);
+    }
+  }
+
+  /**
+   * Загружает куки из файла
+   */
+  async loadCookies() {
+    try {
+      if (!this.context) {
+        console.log('Browser context not initialized, cannot load cookies');
+        return false;
+      }
+
+      const cookieDataText = await fs.readFile(this.cookiesPath, 'utf-8');
+      const cookieData = JSON.parse(cookieDataText);
+
+      if (!cookieData.cookies || !Array.isArray(cookieData.cookies)) {
+        console.log('Invalid cookie data format');
+        return false;
+      }
+
+      // Проверяем валидность куки (не старше 7 дней)
+      if (cookieData.timestamp) {
+        const cookieDate = new Date(cookieData.timestamp);
+        const now = new Date();
+        const daysDiff = (now - cookieDate) / (1000 * 60 * 60 * 24);
+
+        if (daysDiff > 7) {
+          console.log('Cookies are too old (more than 7 days), will login with credentials');
+          return false;
+        }
+      }
+
+      await this.context.addCookies(cookieData.cookies);
+      console.log(`Cookies loaded from ${this.cookiesPath} (${cookieData.cookies.length} cookies)`);
+      return true;
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        console.log('No existing cookies file found');
+      } else {
+        console.warn('Failed to load cookies:', error.message);
+      }
+      return false;
+    }
+  }
+
+  /**
+   * Проверяет валидность загруженных куки путем посещения защищенной страницы
+   */
+  async validateCookies() {
+    try {
+      console.log('Validating cookies...');
+
+      // Попытаться открыть защищенную страницу Semrush
+      await this.page.goto('https://www.semrush.com/home/', {
+        waitUntil: 'domcontentloaded',
+        timeout: 10000
+      });
+
+      const currentUrl = this.page.url();
+
+      // Если нас перенаправило на логин или мы не на защищенной странице, куки недействительны
+      if (currentUrl.includes('/login') || currentUrl.includes('login.') || !currentUrl.includes('semrush.com')) {
+        console.log('Cookies validation failed - redirected to login page');
+        return false;
+      }
+
+      // Дополнительная проверка - ищем элементы, доступные только авторизованным пользователям
+      const hasLogoutButton = await this.page.locator('a[href*="/logout"], button[title*="logout"]').count() > 0;
+      const hasUserMenu = await this.page.locator('.user-menu, .account-menu, [data-testid*="user"]').count() > 0;
+
+      if (hasLogoutButton || hasUserMenu) {
+        console.log('Cookies are valid');
+        this.isLoggedIn = true;
+        return true;
+      }
+
+      console.log('Cookies validation inconclusive, but on protected page');
+      this.isLoggedIn = true;
+      return true;
+
+    } catch (error) {
+      console.log('Cookie validation failed:', error.message);
+      return false;
+    }
   }
 
   async initialize() {
@@ -55,8 +191,29 @@ class SemrushScraper {
 
       console.log('Starting login process...');
 
-      // Navigate to login page
-      await this.page.goto('https://www.semrush.com/login/', { waitUntil: 'domcontentloaded', timeout: 30000 });
+      // Сначала пытаемся загрузить куки из файла
+      const cookiesLoaded = await this.loadCookies();
+      let cookiesValid = false;
+
+      if (cookiesLoaded) {
+        console.log('Trying to login with saved cookies...');
+        cookiesValid = await this.retryOperation(() => this.validateCookies());
+
+        if (cookiesValid) {
+          console.log('Login successful with saved cookies');
+          return;
+        } else {
+          console.log('Cookies are invalid, proceeding with password login...');
+        }
+      } else {
+        console.log('No saved cookies found, proceeding with password login...');
+      }
+
+      // Если куки не загрузились или невалидны, логинимся по паролю
+      console.log('Logging in with credentials...');
+
+      // Navigate to login page with retry
+      await this.retryOperation(() => this.page.goto('https://www.semrush.com/login/', { waitUntil: 'domcontentloaded', timeout: 30000 }));
 
       // Wait for login form to load
       await this.page.waitForSelector('input[name="email"]', { timeout: 10000 });
@@ -81,7 +238,10 @@ class SemrushScraper {
         const currentUrl = this.page.url();
         if (currentUrl.includes('home') || currentUrl.includes('dashboard') || currentUrl.includes('semrush.com/products')) {
           this.isLoggedIn = true;
-          console.log('Successfully logged in to Semrush - redirected to:', currentUrl);
+          console.log('Successfully logged in to Semrush with credentials - redirected to:', currentUrl);
+
+          // Сохраняем куки после успешного логина
+          await this.saveCookies();
         } else {
           throw new Error('Login failed - redirected to unexpected page: ' + currentUrl);
         }
@@ -91,6 +251,9 @@ class SemrushScraper {
         if (finalUrl.includes('/home/') || finalUrl.includes('dashboard')) {
           this.isLoggedIn = true;
           console.log('Login successful despite timeout - URL:', finalUrl);
+
+          // Сохраняем куки после успешного логина
+          await this.saveCookies();
         } else {
           throw new Error('Login verification failed or timed out - URL: ' + finalUrl);
         }
@@ -219,159 +382,209 @@ class SemrushScraper {
 
   async getKeywordOverview(keyword) {
     try {
+      // Check if browser is initialized, restart if needed
+      if (!this.browser || !this.context || !this.page || this.page.isClosed()) {
+        console.log('Browser not available, reinitializing...');
+        await this.initialize();
+        // After browser reinitialization, we need to login again
+        if (!this.isLoggedIn) {
+          console.log('Re-logging in after browser restart...');
+          await this.login();
+        }
+      } else {
+        // Ensure we're logged in even if browser is still available
+        if (!this.isLoggedIn) {
+          await this.login();
+        }
+      }
+
+      // Double check that we're still logged in after login
       if (!this.isLoggedIn) {
-        await this.login();
+        throw new Error('Login failed, cannot proceed with keyword overview');
       }
 
       const url = `https://www.semrush.com/analytics/keywordoverview/?q=${encodeURIComponent(keyword)}&db=us`;
 
       console.log(`Navigating to Keyword Overview: ${url}`);
-      await this.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+      // Use retry operation for navigation to handle network issues
+      await this.retryOperation(async () => {
+        // Check if page is still available before navigation
+        if (this.page.isClosed()) {
+          console.log('Page closed during operation, reinitializing...');
+          await this.initialize();
+          await this.login();
+        }
+        await this.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      });
+
+      console.log('Successfully navigated to Keyword Overview page');
 
       // Smart waiting - check for sufficient content loading for parsing
       await this.waitForKeywordOverviewContent();
 
-      // Debug: Log page content structure for understanding HTML
-      const debugInfo = await this.page.evaluate(() => {
-        const debug = {
-          allHeadings: Array.from(document.querySelectorAll('h1, h2, h3')).map(h => ({ tag: h.tagName, text: h.textContent.trim() })).filter(h => h.text),
-          tables: Array.from(document.querySelectorAll('table')).map((table, i) => ({
-            index: i,
-            rows: table.querySelectorAll('tr').length,
-            headers: Array.from(table.querySelectorAll('th, td')).slice(0, 3).map(cell => cell.textContent.trim()),
-            content: table.textContent.slice(0, 200)
-          })),
-          allNumbers: Array.from(document.querySelectorAll('*')).map(el => {
-            const text = el.textContent.trim();
-            const numbers = text.match(/\b\d+(?:,\d+)*(?:\.\d+)?%?\b|\$\d+(?:\.\d+)?/g);
-            return numbers ? { element: el.tagName, text, numbers: numbers.slice(0, 3) } : null;
-          }).filter(Boolean).slice(0, 10),
-          bodyLength: document.body?.textContent?.length || 0,
-          bodySample: document.body?.textContent?.slice(0, 500) || ''
-        };
-        return debug;
-      });
+      // Take a screenshot for debugging what the page looks like
+      await this.page.screenshot({ path: 'debug-semrush-page.png', fullPage: true });
+      console.log('Screenshot saved as debug-semrush-page.png');
 
-      console.log('DEBUG INFO:', {
-        headings: debugInfo.allHeadings,
-        tables: debugInfo.tables,
-        numbers: debugInfo.allNumbers,
-        bodyLength: debugInfo.bodyLength,
-        bodySample: debugInfo.bodySample
-      });
-
-      // Extract data from the page
-      const data = await this.page.evaluate(() => {
+      // Extract data from the page using SEMrush-specific selectors
+      const extractionResult = await this.page.evaluate(() => {
         const result = {
           keyword: '',
           volume: null,
           keyword_difficulty: null,
           global_volume: null,
           trend: [],
-          related_keywords: []
+          related_keywords: [],
+          debug: {
+            difficulty_extraction: {}
+          }
         };
 
         try {
-          // Extract keyword from various sources
-          result.keyword = document.querySelector('h1')?.textContent?.trim() ||
-                          document.querySelector('[data-testid*="keyword"]')?.textContent?.trim() ||
-                          document.querySelector('.keyword-title')?.textContent?.trim() ||
+          // Extract keyword from title or input field
+          result.keyword = document.title?.replace('Keyword Overview: ', '')?.trim() ||
+                          document.querySelector('h1')?.textContent?.trim() ||
+                          document.querySelector('input[name="q"], [data-testid*="keyword"]')?.value ||
                           '';
 
-          // Extract volume and other main metrics from different possible selectors
-          const metricLabels = document.querySelectorAll('[data-testid*="label"], .metric-label, .stat-label');
-          const metricValues = document.querySelectorAll('[data-testid*="value"], .metric-value, .stat-value');
+          // Extract volume using specific SEMrush selectors
+          const volumeElement = document.querySelector('[data-testid="volume-total"]') ||
+                               document.querySelector('.kwo-volume-widget-layout__line_volume span') ||
+                               document.querySelector('.kwo-widget-total');
 
-          // Look for specific metrics by their labels
-          for (let i = 0; i < metricLabels.length; i++) {
-            const label = metricLabels[i]?.textContent?.toLowerCase()?.trim();
-            const value = metricValues[i]?.textContent?.trim();
-
-            if (!label || !value) continue;
-
-            if (label.includes('volume') && !label.includes('global') && result.volume === null) {
-              result.volume = parseInt(value.replace(/,/g, ''));
-            }
-            if (label.includes('global volume') || label.includes('total volume')) {
-              result.global_volume = parseInt(value.replace(/,/g, ''));
-            }
-            if ((label.includes('difficulty') || label.includes('competition')) && result.keyword_difficulty === null) {
-              result.keyword_difficulty = parseFloat(value.replace(/%/g, ''));
-            }
-            if (label.includes('cpc') || label.includes('cost per click')) {
-              result.cpc = parseFloat(value.replace(/[$,]/g, ''));
+          if (volumeElement) {
+            const volumeText = volumeElement.textContent?.trim();
+            if (volumeText) {
+              // Parse values like "8.1K", "5,200", "2.3M"
+              const volumeMatch = volumeText.match(/([\d,]+(?:\.\d+)?)[KkMmBb]?/);
+              if (volumeMatch) {
+                const baseValue = parseFloat(volumeMatch[1].replace(/,/g, ''));
+                const multiplier = volumeText.includes('K') || volumeText.includes('k') ? 1000 :
+                                 volumeText.includes('M') || volumeText.includes('m') ? 1000000 :
+                                 volumeText.includes('B') || volumeText.includes('b') ? 1000000000 : 1;
+                result.volume = Math.round(baseValue * multiplier);
+              }
             }
           }
 
-          // Alternative approach - look for metrics by their positioning/values
-          if (result.volume === null || result.keyword_difficulty === null) {
-            // Get all metric values and try to identify them by position or content
-            const allMetricValues = document.querySelectorAll('.metric-value, [data-testid*="value"], .stat-value, .number-value');
+          // Extract keyword difficulty - target the specific difficulty element
+          result.debug.difficulty_extraction.started = true;
+          const difficultyElement = document.querySelector('.kwo-kd__metric');
+          result.debug.difficulty_extraction.element_found = !!difficultyElement;
 
-            allMetricValues.forEach((el, index) => {
-              const text = el.textContent.trim();
-              const numericValue = parseFloat(text.replace(/[$,%]/g, ''));
-
-              if (isNaN(numericValue)) return;
-
-              // Volume is usually a large number
-              if (text.includes(',') && numericValue > 100 && result.volume === null) {
-                result.volume = numericValue;
+          if (difficultyElement) {
+            const difficultyText = difficultyElement.textContent?.trim();
+            result.debug.difficulty_extraction.element_text = difficultyText;
+            if (difficultyText) {
+              const percentMatch = difficultyText.match(/(\d+(?:\.\d+)?)%/);
+              result.debug.difficulty_extraction.percent_match = percentMatch;
+              if (percentMatch) {
+                result.keyword_difficulty = parseFloat(percentMatch[1]);
+                result.debug.difficulty_extraction.success = true;
+                result.debug.difficulty_extraction.value = result.keyword_difficulty;
               }
-              // Difficulty/Competition is usually a percentage 0-100
-              else if (numericValue >= 0 && numericValue <= 100 && text.includes('%') && result.keyword_difficulty === null) {
-                result.keyword_difficulty = numericValue;
+            }
+          } else {
+            // Try alternative selectors
+            const altElements = document.querySelectorAll('[class*="kd"], [class*="difficulty"]');
+            result.debug.difficulty_extraction.alt_elements_count = altElements.length;
+            result.debug.difficulty_extraction.alt_elements = [];
+            altElements.forEach((el, idx) => {
+              const text = el.textContent?.trim();
+              result.debug.difficulty_extraction.alt_elements.push({
+                className: el.className,
+                text: text
+              });
+              if (text && text.includes('%') && result.keyword_difficulty === null) {
+                const match = text.match(/(\d+(?:\.\d+)?)%/);
+                if (match) {
+                  result.keyword_difficulty = parseFloat(match[1]);
+                  result.debug.difficulty_extraction.found_in_alt = true;
+                  result.debug.difficulty_extraction.alt_value = result.keyword_difficulty;
+                }
               }
             });
           }
 
-          // Extract trend data from tables or charts
-          const tables = document.querySelectorAll('table');
-          const trendTable = Array.from(tables).find(table =>
-            table.textContent.toLowerCase().includes('trend') ||
-            table.querySelector('th')?.textContent?.toLowerCase().includes('month')
-          ) || document.querySelector('[data-testid*="trend"]');
-
-          if (trendTable) {
-            const rows = trendTable.querySelectorAll('tr');
-            result.trend = Array.from(rows).slice(1, 13).map(row => { // Skip header, get up to 12 months
-              const cells = row.querySelectorAll('td, th');
-              if (cells.length >= 2) {
-                const month = cells[0]?.textContent?.trim();
-                const volume = parseInt(cells[1]?.textContent?.trim()?.replace(/,/g, '')) || null;
-
-                return volume && month ? { month, volume } : null;
+          // Fallback: look for difficulty in the main metrics area
+          if (result.keyword_difficulty === null) {
+            const allPercentages = document.querySelectorAll('*');
+            let foundInFallback = false;
+            for (const el of allPercentages) {
+              if (el.offsetParent && el.textContent && !foundInFallback) {
+                const text = el.textContent.trim();
+                const percentMatch = text.match(/(\d+(?:\.\d+)?)%/);
+                if (percentMatch) {
+                  const value = parseFloat(percentMatch[1]);
+                  if (value >= 0 && value <= 100) {
+                    // Check if this is likely difficulty by checking surrounding text
+                    const parentText = el.parentElement?.textContent || '';
+                    if (parentText.toLowerCase().includes('difficulty') ||
+                        parentText.toLowerCase().includes('competition') ||
+                        el.closest('[class*="difficulty"], [class*="competition"]')) {
+                      result.keyword_difficulty = value;
+                      foundInFallback = true;
+                      result.debug.difficulty_extraction.found_in_fallback = true;
+                      result.debug.difficulty_extraction.fallback_value = value;
+                      result.debug.difficulty_extraction.fallback_text = text;
+                    }
+                  }
+                }
               }
-              return null;
-            }).filter(item => item !== null);
+            }
           }
 
-          // Extract related keywords - get full table data
-          const allTables = document.querySelectorAll('table');
-          const relatedTable = Array.from(allTables).find(table =>
-            table.textContent.toLowerCase().includes('keyword') ||
-            table.textContent.toLowerCase().includes('related')
-          ) || document.querySelector('[data-testid*="related"], .related-keywords, .keyword-table');
+          // Extract global volume - look for the global/total volume
+          const globalVolumeElement = document.querySelector('[data-testid="global-volume-total"]') ||
+                                     document.querySelector('.kwo-widget-global-volume-lines .kwo-widget-total');
 
-          if (relatedTable) {
-            const rows = relatedTable.querySelectorAll('tr');
-            result.related_keywords = Array.from(rows).slice(1, 16).map(row => { // Skip header, get top 15
-              const cells = row.querySelectorAll('td');
-              if (cells.length >= 1) {
-                const keyword = cells[0]?.textContent?.trim();
-                const volume = cells[1] ? parseInt(cells[1].textContent?.trim()?.replace(/,/g, '')) || null : null;
-                const keyword_difficulty = cells[2] ? parseFloat(cells[2].textContent?.trim()?.replace(/%/g, '')) || null : null;
-                const cpc = cells[3] ? parseFloat(cells[3].textContent?.trim()?.replace(/[$,]/g, '')) || null : null;
-
-                return keyword ? {
-                  keyword,
-                  volume,
-                  keyword_difficulty,
-                  cpc
-                } : null;
+          if (globalVolumeElement) {
+            const globalText = globalVolumeElement.textContent?.trim();
+            if (globalText) {
+              const globalMatch = globalText.match(/([\d,]+(?:\.\d+)?)[KkMmBb]?/);
+              if (globalMatch) {
+                const baseValue = parseFloat(globalMatch[1].replace(/,/g, ''));
+                const multiplier = globalText.includes('K') || globalText.includes('k') ? 1000 :
+                                 globalText.includes('M') || globalText.includes('m') ? 1000000 :
+                                 globalText.includes('B') || globalText.includes('b') ? 1000000000 : 1;
+                result.global_volume = Math.round(baseValue * multiplier);
               }
-              return null;
-            }).filter(item => item !== null);
+            }
+          }
+
+          // Final fallback: look for any large volume numbers that might be global
+          if (result.global_volume === null && result.volume !== null) {
+            const allNumbers = document.querySelectorAll('*');
+            const volumeCandidates = [];
+
+            for (const el of allNumbers) {
+              if (el.offsetParent && el.textContent) {
+                const text = el.textContent.trim();
+                const numberMatch = text.match(/([\d,]+(?:\.\d+)?)[KkMmBb]?/);
+                if (numberMatch && !text.includes('%')) {
+                  const baseValue = parseFloat(numberMatch[1].replace(/,/g, ''));
+                  const multiplier = text.includes('K') || text.includes('k') ? 1000 :
+                                   text.includes('M') || text.includes('m') ? 1000000 :
+                                   text.includes('B') || text.includes('b') ? 1000000000 : 1;
+                  const actualValue = Math.round(baseValue * multiplier);
+
+                  if (actualValue > result.volume * 1.5 && actualValue < result.volume * 20) {
+                    volumeCandidates.push({
+                      value: actualValue,
+                      text: text,
+                      element: el
+                    });
+                  }
+                }
+              }
+            }
+
+            if (volumeCandidates.length > 0) {
+              // Take the largest candidate as global volume
+              volumeCandidates.sort((a, b) => b.value - a.value);
+              result.global_volume = volumeCandidates[0].value;
+            }
           }
 
         } catch (error) {
@@ -380,6 +593,11 @@ class SemrushScraper {
 
         return result;
       });
+
+      // Log debug information from the browser context
+      console.log('Difficulty extraction debug:', extractionResult.debug.difficulty_extraction);
+
+      const data = extractionResult;
 
       return {
         success: true,
@@ -414,7 +632,7 @@ class SemrushScraper {
       // Smart waiting for Keyword Magic content
       await this.waitForKeywordMagicContent();
 
-      // Extract data from the page
+      // Extract data from the page - simplified approach to find any keywords
       const data = await this.page.evaluate(() => {
         const result = {
           keyword: '',
@@ -422,147 +640,55 @@ class SemrushScraper {
         };
 
         try {
-          // Extract main keyword from different sources
-          result.keyword = document.querySelector('h1')?.textContent?.trim() ||
-                          document.querySelector('[data-testid*="keyword"]')?.textContent?.trim() ||
-                          document.querySelector('.keyword-title')?.textContent?.trim() ||
-                          '';
+          // Extract main keyword from URL or page elements
+          const urlParams = new URLSearchParams(window.location.search);
+          result.keyword = urlParams.get('q') || '';
 
-          // Find the main keyword suggestions table - try multiple selectors
-          const tables = document.querySelectorAll('table');
-          const suggestionTable = Array.from(tables).find(table =>
-            table.textContent.toLowerCase().includes('keyword') &&
-            table.querySelectorAll('tr').length > 10 // Has substantial data
-          ) || document.querySelector('[data-testid="suggestions-table"]') ||
-             document.querySelector('table') ||
-             document.querySelector('[class*="table"]');
+          // COMPREHENSIVE APPROACH: Find all possible keyword candidates
+          const allElements = document.querySelectorAll('*');
+          const keywordCandidates = [];
+          const seen = new Set();
 
-          if (suggestionTable) {
-            // Get table headers to understand column structure
-            const headerRow = suggestionTable.querySelector('thead tr') || suggestionTable.querySelector('tr');
-            const headers = headerRow ? Array.from(headerRow.querySelectorAll('th, td')).map(cell =>
-              cell.textContent.toLowerCase().trim()
-            ) : [];
-
-            // Get all data rows
-            const rows = suggestionTable.querySelectorAll('tbody tr') || suggestionTable.querySelectorAll('tr:not(:first-child)');
-
-            result.suggestions = Array.from(rows).slice(0, 50).map(row => { // Get up to 50 suggestions
-              const cells = row.querySelectorAll('td');
-
-              if (cells.length >= 4) { // Minimum useful data
-                const suggestion = {
-                  keyword: cells[0]?.textContent?.trim() || '',
-                  volume: null,
-                  keyword_difficulty: null,
-                  cpc: null,
-                  results: null,
-                  competition: null
-                };
-
-                // Parse each cell based on typical Semrush Keyword Magic columns
-                const cellTexts = Array.from(cells).map(cell => cell.textContent.trim());
-
-                cellTexts.forEach((text, index) => {
-                  if (index === 0) {
-                    suggestion.keyword = text;
-                  } else if (text.includes(',')) {
-                    // Volume or Results (large numbers)
-                    const numValue = parseInt(text.replace(/,/g, ''));
-                    if (!isNaN(numValue)) {
-                      if (numValue > 10000) {
-                        suggestion.volume = numValue;
-                      } else {
-                        suggestion.results = numValue;
-                      }
-                    }
-                  } else if (text.includes('%')) {
-                    // Competition/Difficulty percentage
-                    suggestion.competition = parseFloat(text.replace(/%/g, ''));
-                    suggestion.keyword_difficulty = parseFloat(text.replace(/%/g, ''));
-                  } else if (text.includes('$') || (text.includes('.') && !isNaN(parseFloat(text)))) {
-                    // CPC (cost per click)
-                    suggestion.cpc = parseFloat(text.replace(/[$,]/g, ''));
-                  }
-                });
-
-                return suggestion.keyword ? suggestion : null;
-              }
-              return null;
-            }).filter(item => item !== null);
-          }
-
-          // Alternative parsing if table structure is different
-          if (result.suggestions.length === 0) {
-            console.log('Alternative parsing for keyword suggestions...');
-
-            // Look for list items or card elements
-            const keywordContainers = document.querySelectorAll(
-              '[data-testid*="keyword"], .keyword-item, .suggestion-item, [class*="keyword"], [class*="suggestion"]'
-            );
-
-            result.suggestions = Array.from(keywordContainers).slice(0, 30).map(container => {
-              try {
-                const keywordText = container.querySelector('[data-testid*="text"]')?.textContent?.trim() ||
-                                  container.querySelector('[class*="text"]')?.textContent?.trim() ||
-                                  container.textContent?.trim();
-
-                if (!keywordText) return null;
-
-                // Extract metrics from the container
-                const metrics = container.textContent.match(/\b\d+(?:,\d+)*(?:\.\d+)?%?\b|\$\d+(?:\.\d+)?/g) || [];
-
-                return {
-                  keyword: keywordText,
-                  volume: metrics.find(m => m.includes(',')) ? parseInt(metrics.find(m => m.includes(',')).replace(/,/g, '')) : null,
-                  keyword_difficulty: metrics.find(m => m.includes('%')) ? parseFloat(metrics.find(m => m.includes('%')).replace(/%/g, '')) : null,
-                  cpc: metrics.find(m => m.includes('$')) ? parseFloat(metrics.find(m => m.includes('$')).replace(/[$,]/g, '')) : null,
-                  competition: metrics.find(m => m.includes('%') && !m.includes('$')) ? parseFloat(metrics.find(m => m.includes('%')).replace(/%/g, '')) : null
-                };
-              } catch (e) {
-                return null;
-              }
-            }).filter(item => item?.keyword);
-          }
-
-          // Try one more comprehensive approach - scan for data by patterns (FIXED SYNTAX ERROR)
-          if (result.suggestions.length === 0) {
-            console.log('Comprehensive parsing for keyword suggestions...');
-
-            // Look for all elements that might contain keyword data
-            const allTextElements = document.querySelectorAll('div, span, p, td');
-            const keywordsFound = [];
-            const volumes = [];
-            const difficulties = [];
-            const cpcs = [];
-
-            allTextElements.forEach(el => {
+          // Collect all text that might be keywords
+          allElements.forEach(el => {
+            if (el.offsetParent !== null && el.textContent) { // Only visible elements
               const text = el.textContent.trim();
-              if (text && text.length > 2 && text.length < 100) {
-                // Check patterns
-                if (text.match(/^\d{1,3}(?:,\d{3})*$/) && parseInt(text.replace(/,/g, '')) > 100) {
-                  volumes.push(parseInt(text.replace(/,/g, '')));
-                } else if (text.match(/^\d+(?:\.\d+)?%$/) && parseFloat(text.replace(/%/g, '')) <= 100) {
-                  difficulties.push(parseFloat(text.replace(/%/g, '')));
-                } else if (text.match(/^\$\d+(?:\.\d+)?$/)) {
-                  cpcs.push(parseFloat(text.replace(/$/g, '')));
-                } else if (!text.includes('$') && !text.includes('%') && !text.includes(',') &&
-                          !text.match(/^\d+$/) && text.split(' ').length <= 10) {
-                  keywordsFound.push(text);
+              if (text && text.length > 2 && text.length < 100 &&
+                  !text.includes('\n') && !text.includes('\t') &&
+                  !seen.has(text.toLowerCase())) {
+
+                // Check if it looks like a keyword (not numbers, not UI text)
+                const hasLetters = /[a-zA-Z]/.test(text);
+                const wordCount = text.split(/\s+/).length;
+                const hasSpecialChars = /[$%&,]/.test(text);
+                const looksLikeUI = /(include|exclude|all|keywords?|export|send|total|average|kd|volume|cpc)/i.test(text);
+
+                if (hasLetters && wordCount <= 5 && !hasSpecialChars && !looksLikeUI &&
+                    !text.match(/^\d/) && text.length < 50) {
+                  keywordCandidates.push(text);
+                  seen.add(text.toLowerCase());
                 }
               }
-            });
+            }
+          });
 
-            // Try to correlate the data
-            const maxSuggestions = Math.min(keywordsFound.length, volumes.length, difficulties.length);
-            result.suggestions = keywordsFound.slice(0, maxSuggestions).map((keyword, index) => ({
-              keyword,
-              volume: volumes[index] || volumes.pop() || null,
-              keyword_difficulty: difficulties[index] || difficulties.pop() || null,
-              cpc: cpcs[index] || cpcs.pop() || null,
-              competition: difficulties[index] || difficulties.pop() || null
-            }));
-          }
+          // Sort by relevance (shorter, more common words first) and take top suggestions
+          keywordCandidates.sort((a, b) => {
+            // Prefer shorter keywords
+            if (a.length !== b.length) return a.length - b.length;
+            return a.localeCompare(b);
+          });
+
+          // Convert to proper format
+          result.suggestions = keywordCandidates.slice(0, 30).map(keyword => ({
+            keyword: keyword,
+            volume: null,
+            keyword_difficulty: null,
+            cpc: null,
+            competition: null
+          }));
+
+          console.log(`Found ${result.suggestions.length} keyword candidates on page`);
 
         } catch (error) {
           console.error('Error extracting Keyword Magic data:', error);
@@ -570,6 +696,9 @@ class SemrushScraper {
 
         return result;
       });
+
+      // Debug output
+      console.log(`Extracted ${data.suggestions.length} keyword suggestions for "${keyword}"`);
 
       return {
         success: true,

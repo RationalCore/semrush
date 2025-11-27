@@ -1,0 +1,1323 @@
+{
+  "title": "talking bot: Overview, Keyword Overview",
+  "allPercentages": [
+    {
+      "value": 0,
+      "text": "Skip to content\n\n\n\n                \n                    \n\n\n                    \n    \n    \n    \n        \n            \n                Your browser or operating system is out of date and Semrush might not be displayed correctly. Please update your browser or operating system.\n            \n        \n        \n            \n                \n                \n            \n        \n    \n    \n    (function () {\n      var el = document.getElementById(\"srf-browser-unhappy\");\n      var closeBtn = document.getElementById(\"srf-browser-unhappy-btn-close\");\n\n      function handler() {\n        var d = new Date();\n        // we don't use max-age here because it's not supported by IE < 9\n        d.setTime(d.getTime() + 2592000000); // 30 days\n        document.cookie =\n          \"browser-unhappy-closed=true; expires=\" +\n          d.toGMTString() +\n          \"; path=/; domain=.semrush.com;\";\n        el.setAttribute(\"class\", \"srf-browser-unhappy--hide\");\n      }\n\n      if (closeBtn.attachEvent) {\n        closeBtn.attachEvent(\"onclick\", handler);\n      } else {\n        closeBtn.addEventListener(\"click\", handler);\n      }\n    })();\n    \n    \n\n\n                    \n\n\n\n    \n    \n\n    \n    document.addEventListener(\"DOMContentLoaded\", () => {\n      window.sm2.renderRenewalNotice({\n        daysLeft: 11,\n        period: \"1 month\",\n        productGroup: \"GURU\",\n        hasProduct: true,\n        isPaid: false,\n        isSubuser: false,\n        isAuthenticated: true\n      });\n    });\n    \n\n\n\n                    \n\n\n                    \n    \n\n\n\n\n                \n\n                \n                    \n                        \n\n\n\n                        \n    \n        \n\n\n\n\n    \n    \n  \n  \n    \n\n  \n\n  \n    \n      \n        \n          \n            \n              \n            \n          \n        \n        \n      \n\n      \n        talking bot\n      \n\n      \n        \n          \n          \n            \n              \n            \n          \n        \n        \n          \n          \n            \n\n            \n              \n                \n                  Invite users\n                \n              \n            \n\n            \n              \n                \n  Pricing\n\n              \n            \n              \n                \n  Enterprise\n\n              \n            \n              \n                \n  \n    More\n  \n  \n    \n      \n        \n        \n          \n            \n              \n  Pricing\n\n            \n          \n        \n          \n            \n              \n  Features\n\n            \n          \n        \n          \n            \n              \n  Blog\n\n            \n          \n        \n          \n            \n              \n  \n    Resources\n  \n  \n    \n      \n        \n          \n  Help Center\n\n        \n      \n    \n      \n        \n          \n  What's new\n\n        \n      \n    \n      \n        \n          \n  Webinars\n\n        \n      \n    \n      \n        \n          \n  Insights\n\n        \n      \n    \n      \n        \n          \n  Hire a Trusted Agency\n\n        \n      \n    \n      \n        \n          \n  Academy\n\n        \n      \n    \n      \n        \n          \n  Top Websites\n\n        \n      \n    \n      \n        \n          \n  AI Visibility Index\n\n        \n      \n    \n      \n        \n          \n  Local Marketing Hub\n\n        \n      \n    \n  \n\n            \n          \n        \n          \n            \n              \n  \n    Company\n  \n  \n    \n      \n        \n          \n  About Us\n\n        \n      \n    \n      \n        \n          \n  Newsroom\n\n        \n      \n    \n      \n        \n          \n  Careers\n\n        \n      \n    \n      \n        \n          \n  Compare Semrush\n\n        \n      \n    \n      \n        \n          \n  Success Stories\n\n        \n      \n    \n      \n        \n          \n  Affiliate Program\n\n        \n      \n    \n      \n        \n          \n  For Investors\n\n        \n      \n    \n      \n        \n          \n  Partner Integrations\n\n        \n      \n    \n      \n        \n          \n  Contacts\n\n        \n      \n    \n      \n        \n          \n  Stats and Facts\n\n        \n      \n    \n  \n\n            \n          \n        \n          \n            \n              \n  Enterprise\n\n            \n          \n        \n          \n            \n              \n  Prowly\n\n            \n          \n        \n          \n            \n              \n  Semrush API\n\n            \n          \n        \n      \n    \n      \n        \n          \n             \n          \n        \n        \n          \n            \n              \n  Online demo\n\n            \n          \n        \n          \n            \n              \n  Learn with Semrush courses\n\n            \n          \n        \n          \n            \n              \n  Hire a digital agency\n\n            \n          \n        \n      \n    \n  \n\n              \n            \n\n            \n              \n                \n                  a\n                \n                \n                  \n                    My profile • ID:27783864\n                      \n                      \n                        akiereisen4133@hotmail.com\n                      \n                    \n                  \n                  \n                    Subscription info\n                  \n                  \n                  \n                    \n                      Manage users\n                    \n                  \n                  \n                    Log out\n                  \n                  \n                     \n                  \n                  \n                    \n                      Language:\n                      English\n                    \n                    \n                      \n                        \n                          \n                            English\n                          \n                        \n                      \n                        \n                          \n                            Deutsch\n                          \n                        \n                      \n                        \n                          \n                            Español\n                          \n                        \n                      \n                        \n                          \n                            Français\n                          \n                        \n                      \n                        \n                          \n                            Italiano\n                          \n                        \n                      \n                        \n                          \n                            Nederlands\n                          \n                        \n                      \n                        \n                          \n                            Polski\n                          \n                        \n                      \n                        \n                          \n                            Português (Brasil)\n                          \n                        \n                      \n                        \n                          \n                            Svenska\n                          \n                        \n                      \n                        \n                          \n                            Tiếng Việt\n                          \n                        \n                      \n                        \n                          \n                            Türkçe\n                          \n                        \n                      \n                        \n                          \n                            中文\n                          \n                        \n                      \n                        \n                          \n                            日本語\n                          \n                        \n                      \n                        \n                          \n                            한국어\n                          \n                        \n                      \n                    \n                  \n                  \n                \n              \n            \n          \n        \n      \n    \n  \n\n\n    \n\n\n    \n\n                    \n                \n\n                \n                    \n                        \n    \n        \n            \n\n\n\n\n    \n    \n  \n  \n    \n      \n        \n          \n            \n            \n          \n\n          \n            \n              \n              \n            \n          \n        \n        \n          \n          \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n          \n        \n        \n        \n          \n            \n            \n          \n          \n            \n            \n          \n        \n      \n    Back to toolkits\n          \n            SEO\n            \n            \n          \n          \n            \n              \n                \n                \n                \n              \n            \n                  \n                \n          \n            Competitive Research\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            Keyword Research\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            Link Building\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            On Page & Tech SEO\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n            Content Ideas\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n            Extras\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n        \n\n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n\n    \n      \n    \n\n    \n      \n    \n  \n\n\n    \n\n\n        \n    \n\n                    \n                \n\n                \n                    \n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();\n                            \n                        \n        \n\n\n\n        \n\n\n    \n\n                    \n\n                    \n                        \n                            \n    \n        \n\n\n\n\n    \n        \n            Contact us\n            About us\n            Blog\n            \n                English\n                \n                    \n                        \n                            \n                                English\n                            \n                        \n                    \n                        \n                            \n                                Deutsch\n                            \n                        \n                    \n                        \n                            \n                                Español\n                            \n                        \n                    \n                        \n                            \n                                Français\n                            \n                        \n                    \n                        \n                            \n                                Italiano\n                            \n                        \n                    \n                        \n                            \n                                Nederlands\n                            \n                        \n                    \n                        \n                            \n                                Polski\n                            \n                        \n                    \n                        \n                            \n                                Português (Brasil)\n                            \n                        \n                    \n                        \n                            \n                                Svenska\n                            \n                        \n                    \n                        \n                            \n                                Tiếng Việt\n                            \n                        \n                    \n                        \n                            \n                                Türkçe\n                            \n                        \n                    \n                        \n                            \n                                中文\n                            \n                        \n                    \n                        \n                            \n                                日本語\n                            \n                        \n                    \n                        \n                            \n                                한국어\n                            \n                        \n                    \n                \n            \n        \n        \n            See plans and pricing\n            Get started with Semrush\n        \n    \n    \n        \n            Contact us\n            Cookie settings\n            Legal info\n            Privacy policy\n            Do not sell my personal info\n        \n        \n            © 2008 - 2025 Semrush. All rights reserved.",
+      "element": "DIV",
+      "className": "srf-layout",
+      "parentText": "\n            \n    \n        \n        \n    \n\n\n\n\n            \n\n            \n                \n\n\n\n\n    Skip to content\n\n\n\n                \n                ",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1298,
+        "height": 1776.59375,
+        "top": 0,
+        "right": 1298,
+        "bottom": 1776.59375,
+        "left": 0
+      }
+    },
+    {
+      "value": 0,
+      "text": "window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();\n                            \n                        \n        \n\n\n\n        \n\n\n    \n\n                    \n\n                    \n                        \n                            \n    \n        \n\n\n\n\n    \n        \n            Contact us\n            About us\n            Blog\n            \n                English\n                \n                    \n                        \n                            \n                                English\n                            \n                        \n                    \n                        \n                            \n                                Deutsch\n                            \n                        \n                    \n                        \n                            \n                                Español\n                            \n                        \n                    \n                        \n                            \n                                Français\n                            \n                        \n                    \n                        \n                            \n                                Italiano\n                            \n                        \n                    \n                        \n                            \n                                Nederlands\n                            \n                        \n                    \n                        \n                            \n                                Polski\n                            \n                        \n                    \n                        \n                            \n                                Português (Brasil)\n                            \n                        \n                    \n                        \n                            \n                                Svenska\n                            \n                        \n                    \n                        \n                            \n                                Tiếng Việt\n                            \n                        \n                    \n                        \n                            \n                                Türkçe\n                            \n                        \n                    \n                        \n                            \n                                中文\n                            \n                        \n                    \n                        \n                            \n                                日本語\n                            \n                        \n                    \n                        \n                            \n                                한국어\n                            \n                        \n                    \n                \n            \n        \n        \n            See plans and pricing\n            Get started with Semrush\n        \n    \n    \n        \n            Contact us\n            Cookie settings\n            Legal info\n            Privacy policy\n            Do not sell my personal info\n        \n        \n            © 2008 - 2025 Semrush. All rights reserved.",
+      "element": "DIV",
+      "className": "srf-layout-main-content-wrapper",
+      "parentText": "\n                \n\n\n\n\n    Skip to content\n\n\n\n                \n                    \n\n\n                    \n    \n    \n    \n        \n            \n       ",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1678.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1776.59375,
+        "left": 230
+      }
+    },
+    {
+      "value": 0,
+      "text": "window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();",
+      "element": "MAIN",
+      "className": "srf-layout__body",
+      "parentText": "\n                    \n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = ",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "value": 54,
+      "text": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "",
+      "parentText": "\n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = '{\"databases\":[{\"code",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "value": 54,
+      "text": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-page-layout",
+      "parentText": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk Anal",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "value": 54,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-page-layout__content",
+      "parentText": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk Anal",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect loc",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1388.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1660.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-animate-slide-layout",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect loc",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1388.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1660.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-animate-slide-layout__slide",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect loc",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-content-layout",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect loc",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-overlay-layout",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect loc",
+      "rect": {
+        "x": 262,
+        "y": 348.59375,
+        "width": 1004,
+        "height": 1216,
+        "top": 348.59375,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-national-metrics-layout",
+      "parentText": "National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 refe",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 1004,
+        "height": 1168,
+        "top": 396.59375,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/a",
+      "element": "SECTION",
+      "className": "kwo-top-widgets-layout",
+      "parentText": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 1004,
+        "height": 294,
+        "top": 396.59375,
+        "right": 1266,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "element": "DIV",
+      "className": "kwo-top-widgets-layout__item kwo-top-widgets-layout__item_volume",
+      "parentText": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 294,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "element": "DIV",
+      "className": "kwo-widget-layout",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 294,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "element": "DIV",
+      "className": "kwo-widget-layout__content",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 271,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 667.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 54,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "element": "DIV",
+      "className": "kwo-volume-widget-layout",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 282,
+        "y": 416.59375,
+        "width": 199,
+        "height": 231,
+        "top": 416.59375,
+        "right": 481,
+        "bottom": 647.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 54,
+      "text": "Keyword Difficulty54%Difficult",
+      "element": "DIV",
+      "className": "kwo-volume-widget-layout__line",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 282,
+        "y": 509.59375,
+        "width": 199,
+        "height": 76,
+        "top": 509.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 54,
+      "text": "Keyword Difficulty54%Difficult",
+      "element": "DIV",
+      "className": "kwo-n-rows-layout",
+      "parentText": "Keyword Difficulty54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 509.59375,
+        "width": 199,
+        "height": 76,
+        "top": 509.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 54,
+      "text": "54%Difficult",
+      "element": "DIV",
+      "className": "kwo-kd",
+      "parentText": "Keyword Difficulty54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 199,
+        "height": 48,
+        "top": 537.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 54,
+      "text": "54%Difficult",
+      "element": "DIV",
+      "className": "kwo-kd__metrics-wrapper",
+      "parentText": "54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 53.953125,
+        "height": 48,
+        "top": 537.59375,
+        "right": 335.953125,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 54,
+      "text": "54%",
+      "element": "SPAN",
+      "className": "kwo-kd__metric",
+      "parentText": "54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 53.953125,
+        "height": 28,
+        "top": 537.59375,
+        "right": 335.953125,
+        "bottom": 565.59375,
+        "left": 282
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "SECTION",
+      "className": "kwo-national-metrics-layout__item kwo-national-metrics-layout__item_keyword-ideas",
+      "parentText": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.",
+      "rect": {
+        "x": 262,
+        "y": 706.59375,
+        "width": 1004,
+        "height": 518,
+        "top": 706.59375,
+        "right": 1266,
+        "bottom": 1224.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-widget-layout",
+      "parentText": "Keyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai tal",
+      "rect": {
+        "x": 262,
+        "y": 706.59375,
+        "width": 1004,
+        "height": 518,
+        "top": 706.59375,
+        "right": 1266,
+        "bottom": 1224.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-widget-layout__content",
+      "parentText": "Keyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai tal",
+      "rect": {
+        "x": 262,
+        "y": 750.59375,
+        "width": 1004,
+        "height": 474,
+        "top": 750.59375,
+        "right": 1266,
+        "bottom": 1224.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-n-columns-layout",
+      "parentText": "Keyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079ta",
+      "rect": {
+        "x": 262,
+        "y": 750.59375,
+        "width": 1004,
+        "height": 474,
+        "top": 750.59375,
+        "right": 1266,
+        "bottom": 1224.59375,
+        "left": 262
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-n-columns-layout__item",
+      "parentText": "Keyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079ta",
+      "rect": {
+        "x": 958,
+        "y": 750.59375,
+        "width": 308,
+        "height": 474,
+        "top": 750.59375,
+        "right": 1266,
+        "bottom": 1224.59375,
+        "left": 958
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "",
+      "parentText": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineI",
+      "rect": {
+        "x": 958,
+        "y": 750.59375,
+        "width": 308,
+        "height": 373,
+        "top": 750.59375,
+        "right": 1266,
+        "bottom": 1123.59375,
+        "left": 958
+      }
+    },
+    {
+      "value": 49,
+      "text": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-widget-ideas-layout",
+      "parentText": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineI",
+      "rect": {
+        "x": 958,
+        "y": 750.59375,
+        "width": 308,
+        "height": 373,
+        "top": 750.59375,
+        "right": 1266,
+        "bottom": 1123.59375,
+        "left": 958
+      }
+    },
+    {
+      "value": 49,
+      "text": "Get topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-widget-ideas-layout__table",
+      "parentText": "Keyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineI",
+      "rect": {
+        "x": 958,
+        "y": 805.59375,
+        "width": 308,
+        "height": 318,
+        "top": 805.59375,
+        "right": 1266,
+        "bottom": 1123.59375,
+        "left": 958
+      }
+    },
+    {
+      "value": 49,
+      "text": "Get topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "element": "DIV",
+      "className": "kwo-clusters-widget",
+      "parentText": "Get topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informat",
+      "rect": {
+        "x": 958,
+        "y": 805.59375,
+        "width": 308,
+        "height": 318,
+        "top": 805.59375,
+        "right": 1266,
+        "bottom": 1123.59375,
+        "left": 958
+      }
+    },
+    {
+      "value": 49,
+      "text": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbots",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__clusters-wrapper",
+      "parentText": "Get topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informat",
+      "rect": {
+        "x": 989,
+        "y": 883.59375,
+        "width": 257,
+        "height": 164,
+        "top": 883.59375,
+        "right": 1246,
+        "bottom": 1047.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 49,
+      "text": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot online",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__wrapper",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational",
+      "rect": {
+        "x": 989,
+        "y": 883.59375,
+        "width": 257,
+        "height": 36,
+        "top": 883.59375,
+        "right": 1246,
+        "bottom": 919.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 49,
+      "text": "Intents: Informational 49%, Commercial 50%, Transactional 1%",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__intent",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot online",
+      "rect": {
+        "x": 1013,
+        "y": 883.59375,
+        "width": 40,
+        "height": 20,
+        "top": 883.59375,
+        "right": 1053,
+        "bottom": 903.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 49,
+      "text": "Intents: Informational 49%, Commercial 50%, Transactional 1%",
+      "element": "DIV",
+      "className": "___SBox_epc1q-ko_ ___SBoxInline_epc1q-ko_ kwo-intent-distribution",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%",
+      "rect": {
+        "x": 1013,
+        "y": 883.59375,
+        "width": 40,
+        "height": 20,
+        "top": 883.59375,
+        "right": 1053,
+        "bottom": 903.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 49,
+      "text": "Intents: Informational 49%, Commercial 50%, Transactional 1%",
+      "element": "SPAN",
+      "className": "kwo-intent-distribution__content-vh",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%",
+      "rect": {
+        "x": 1012,
+        "y": 893.09375,
+        "width": 1,
+        "height": 1,
+        "top": 893.09375,
+        "right": 1013,
+        "bottom": 894.09375,
+        "left": 1012
+      }
+    },
+    {
+      "value": 7,
+      "text": "Intents: Informational 7%, Commercial 93%chat bot ai",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__wrapper",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational",
+      "rect": {
+        "x": 989,
+        "y": 919.59375,
+        "width": 257,
+        "height": 36,
+        "top": 919.59375,
+        "right": 1246,
+        "bottom": 955.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 7,
+      "text": "Intents: Informational 7%, Commercial 93%",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__intent",
+      "parentText": "Intents: Informational 7%, Commercial 93%chat bot ai",
+      "rect": {
+        "x": 1013,
+        "y": 919.59375,
+        "width": 40,
+        "height": 20,
+        "top": 919.59375,
+        "right": 1053,
+        "bottom": 939.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 7,
+      "text": "Intents: Informational 7%, Commercial 93%",
+      "element": "DIV",
+      "className": "___SBox_epc1q-ko_ ___SBoxInline_epc1q-ko_ kwo-intent-distribution",
+      "parentText": "Intents: Informational 7%, Commercial 93%",
+      "rect": {
+        "x": 1013,
+        "y": 919.59375,
+        "width": 40,
+        "height": 20,
+        "top": 919.59375,
+        "right": 1053,
+        "bottom": 939.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 7,
+      "text": "Intents: Informational 7%, Commercial 93%",
+      "element": "SPAN",
+      "className": "kwo-intent-distribution__content-vh",
+      "parentText": "Intents: Informational 7%, Commercial 93%",
+      "rect": {
+        "x": 1012,
+        "y": 929.09375,
+        "width": 1,
+        "height": 1,
+        "top": 929.09375,
+        "right": 1013,
+        "bottom": 930.09375,
+        "left": 1012
+      }
+    },
+    {
+      "value": 44,
+      "text": "Intents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign up",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__wrapper",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational",
+      "rect": {
+        "x": 989,
+        "y": 955.59375,
+        "width": 257,
+        "height": 36,
+        "top": 955.59375,
+        "right": 1246,
+        "bottom": 991.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 44,
+      "text": "Intents: Navigational 44%, Commercial 6%, Transactional 50%",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__intent",
+      "parentText": "Intents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign up",
+      "rect": {
+        "x": 1013,
+        "y": 955.59375,
+        "width": 40,
+        "height": 20,
+        "top": 955.59375,
+        "right": 1053,
+        "bottom": 975.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 44,
+      "text": "Intents: Navigational 44%, Commercial 6%, Transactional 50%",
+      "element": "DIV",
+      "className": "___SBox_epc1q-ko_ ___SBoxInline_epc1q-ko_ kwo-intent-distribution",
+      "parentText": "Intents: Navigational 44%, Commercial 6%, Transactional 50%",
+      "rect": {
+        "x": 1013,
+        "y": 955.59375,
+        "width": 40,
+        "height": 20,
+        "top": 955.59375,
+        "right": 1053,
+        "bottom": 975.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 44,
+      "text": "Intents: Navigational 44%, Commercial 6%, Transactional 50%",
+      "element": "SPAN",
+      "className": "kwo-intent-distribution__content-vh",
+      "parentText": "Intents: Navigational 44%, Commercial 6%, Transactional 50%",
+      "rect": {
+        "x": 1012,
+        "y": 965.09375,
+        "width": 1,
+        "height": 1,
+        "top": 965.09375,
+        "right": 1013,
+        "bottom": 966.09375,
+        "left": 1012
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%top ai chatbots",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__wrapper",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational",
+      "rect": {
+        "x": 989,
+        "y": 991.59375,
+        "width": 257,
+        "height": 36,
+        "top": 991.59375,
+        "right": 1246,
+        "bottom": 1027.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__intent",
+      "parentText": "Intents: Commercial 100%top ai chatbots",
+      "rect": {
+        "x": 1013,
+        "y": 991.59375,
+        "width": 40,
+        "height": 20,
+        "top": 991.59375,
+        "right": 1053,
+        "bottom": 1011.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "DIV",
+      "className": "___SBox_epc1q-ko_ ___SBoxInline_epc1q-ko_ kwo-intent-distribution",
+      "parentText": "Intents: Commercial 100%",
+      "rect": {
+        "x": 1013,
+        "y": 991.59375,
+        "width": 40,
+        "height": 20,
+        "top": 991.59375,
+        "right": 1053,
+        "bottom": 1011.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "SPAN",
+      "className": "kwo-intent-distribution__content-vh",
+      "parentText": "Intents: Commercial 100%",
+      "rect": {
+        "x": 1012,
+        "y": 1001.09375,
+        "width": 1,
+        "height": 1,
+        "top": 1001.09375,
+        "right": 1013,
+        "bottom": 1002.09375,
+        "left": 1012
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%best ai chatbots",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__wrapper",
+      "parentText": "Intents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational",
+      "rect": {
+        "x": 989,
+        "y": 1027.59375,
+        "width": 257,
+        "height": 20,
+        "top": 1027.59375,
+        "right": 1246,
+        "bottom": 1047.59375,
+        "left": 989
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "DIV",
+      "className": "kwo-clusters-widget__intent",
+      "parentText": "Intents: Commercial 100%best ai chatbots",
+      "rect": {
+        "x": 1013,
+        "y": 1027.59375,
+        "width": 40,
+        "height": 20,
+        "top": 1027.59375,
+        "right": 1053,
+        "bottom": 1047.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "DIV",
+      "className": "___SBox_epc1q-ko_ ___SBoxInline_epc1q-ko_ kwo-intent-distribution",
+      "parentText": "Intents: Commercial 100%",
+      "rect": {
+        "x": 1013,
+        "y": 1027.59375,
+        "width": 40,
+        "height": 20,
+        "top": 1027.59375,
+        "right": 1053,
+        "bottom": 1047.59375,
+        "left": 1013
+      }
+    },
+    {
+      "value": 100,
+      "text": "Intents: Commercial 100%",
+      "element": "SPAN",
+      "className": "kwo-intent-distribution__content-vh",
+      "parentText": "Intents: Commercial 100%",
+      "rect": {
+        "x": 1012,
+        "y": 1037.09375,
+        "width": 1,
+        "height": 1,
+        "top": 1037.09375,
+        "right": 1013,
+        "bottom": 1038.09375,
+        "left": 1012
+      }
+    }
+  ],
+  "difficultyElements": [
+    {
+      "selector": ".kwo-metrics-data-layout",
+      "tagName": "DIV",
+      "className": "kwo-metrics-data-layout",
+      "text": "$2.20",
+      "parentText": "CPC$2.20",
+      "rect": {
+        "x": 1047,
+        "y": 440.59375,
+        "width": 89.5,
+        "height": 28,
+        "top": 440.59375,
+        "right": 1136.5,
+        "bottom": 468.59375,
+        "left": 1047
+      }
+    },
+    {
+      "selector": ".kwo-metrics-data-layout",
+      "tagName": "DIV",
+      "className": "kwo-metrics-data-layout",
+      "text": "0.35",
+      "parentText": "Competitive Density0.35",
+      "rect": {
+        "x": 1047,
+        "y": 533.59375,
+        "width": 133.296875,
+        "height": 28,
+        "top": 533.59375,
+        "right": 1180.296875,
+        "bottom": 561.59375,
+        "left": 1047
+      }
+    }
+  ],
+  "allElementsWith54": [
+    {
+      "tagName": "DIV",
+      "className": "srf-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Skip to content\n\n\n\n                \n                    \n\n\n                    \n    \n    \n    \n        \n            \n                Your browser or operating system is out of date and Semrush might not be displayed correctly. Please update your browser or operating system.\n            \n        \n        \n            \n                \n                \n            \n        \n    \n    \n    (function () {\n      var el = document.getElementById(\"srf-browser-unhappy\");\n      var closeBtn = document.getElementById(\"srf-browser-unhappy-btn-close\");\n\n      function handler() {\n        var d = new Date();\n        // we don't use max-age here because it's not supported by IE < 9\n        d.setTime(d.getTime() + 2592000000); // 30 days\n        document.cookie =\n          \"browser-unhappy-closed=true; expires=\" +\n          d.toGMTString() +\n          \"; path=/; domain=.semrush.com;\";\n        el.setAttribute(\"class\", \"srf-browser-unhappy--hide\");\n      }\n\n      if (closeBtn.attachEvent) {\n        closeBtn.attachEvent(\"onclick\", handler);\n      } else {\n        closeBtn.addEventListener(\"click\", handler);\n      }\n    })();\n    \n    \n\n\n                    \n\n\n\n    \n    \n\n    \n    document.addEventListener(\"DOMContentLoaded\", () => {\n      window.sm2.renderRenewalNotice({\n        daysLeft: 11,\n        period: \"1 month\",\n        productGroup: \"GURU\",\n        hasProduct: true,\n        isPaid: false,\n        isSubuser: false,\n        isAuthenticated: true\n      });\n    });\n    \n\n\n\n                    \n\n\n                    \n    \n\n\n\n\n                \n\n                \n                    \n                        \n\n\n\n                        \n    \n        \n\n\n\n\n    \n    \n  \n  \n    \n\n  \n\n  \n    \n      \n        \n          \n            \n              \n            \n          \n        \n        \n      \n\n      \n        talking bot\n      \n\n      \n        \n          \n          \n            \n              \n            \n          \n        \n        \n          \n          \n            \n\n            \n              \n                \n                  Invite users\n                \n              \n            \n\n            \n              \n                \n  Pricing\n\n              \n            \n              \n                \n  Enterprise\n\n              \n            \n              \n                \n  \n    More\n  \n  \n    \n      \n        \n        \n          \n            \n              \n  Pricing\n\n            \n          \n        \n          \n            \n              \n  Features\n\n            \n          \n        \n          \n            \n              \n  Blog\n\n            \n          \n        \n          \n            \n              \n  \n    Resources\n  \n  \n    \n      \n        \n          \n  Help Center\n\n        \n      \n    \n      \n        \n          \n  What's new\n\n        \n      \n    \n      \n        \n          \n  Webinars\n\n        \n      \n    \n      \n        \n          \n  Insights\n\n        \n      \n    \n      \n        \n          \n  Hire a Trusted Agency\n\n        \n      \n    \n      \n        \n          \n  Academy\n\n        \n      \n    \n      \n        \n          \n  Top Websites\n\n        \n      \n    \n      \n        \n          \n  AI Visibility Index\n\n        \n      \n    \n      \n        \n          \n  Local Marketing Hub\n\n        \n      \n    \n  \n\n            \n          \n        \n          \n            \n              \n  \n    Company\n  \n  \n    \n      \n        \n          \n  About Us\n\n        \n      \n    \n      \n        \n          \n  Newsroom\n\n        \n      \n    \n      \n        \n          \n  Careers\n\n        \n      \n    \n      \n        \n          \n  Compare Semrush\n\n        \n      \n    \n      \n        \n          \n  Success Stories\n\n        \n      \n    \n      \n        \n          \n  Affiliate Program\n\n        \n      \n    \n      \n        \n          \n  For Investors\n\n        \n      \n    \n      \n        \n          \n  Partner Integrations\n\n        \n      \n    \n      \n        \n          \n  Contacts\n\n        \n      \n    \n      \n        \n          \n  Stats and Facts\n\n        \n      \n    \n  \n\n            \n          \n        \n          \n            \n              \n  Enterprise\n\n            \n          \n        \n          \n            \n              \n  Prowly\n\n            \n          \n        \n          \n            \n              \n  Semrush API\n\n            \n          \n        \n      \n    \n      \n        \n          \n             \n          \n        \n        \n          \n            \n              \n  Online demo\n\n            \n          \n        \n          \n            \n              \n  Learn with Semrush courses\n\n            \n          \n        \n          \n            \n              \n  Hire a digital agency\n\n            \n          \n        \n      \n    \n  \n\n              \n            \n\n            \n              \n                \n                  a\n                \n                \n                  \n                    My profile • ID:27783864\n                      \n                      \n                        akiereisen4133@hotmail.com\n                      \n                    \n                  \n                  \n                    Subscription info\n                  \n                  \n                  \n                    \n                      Manage users\n                    \n                  \n                  \n                    Log out\n                  \n                  \n                     \n                  \n                  \n                    \n                      Language:\n                      English\n                    \n                    \n                      \n                        \n                          \n                            English\n                          \n                        \n                      \n                        \n                          \n                            Deutsch\n                          \n                        \n                      \n                        \n                          \n                            Español\n                          \n                        \n                      \n                        \n                          \n                            Français\n                          \n                        \n                      \n                        \n                          \n                            Italiano\n                          \n                        \n                      \n                        \n                          \n                            Nederlands\n                          \n                        \n                      \n                        \n                          \n                            Polski\n                          \n                        \n                      \n                        \n                          \n                            Português (Brasil)\n                          \n                        \n                      \n                        \n                          \n                            Svenska\n                          \n                        \n                      \n                        \n                          \n                            Tiếng Việt\n                          \n                        \n                      \n                        \n                          \n                            Türkçe\n                          \n                        \n                      \n                        \n                          \n                            中文\n                          \n                        \n                      \n                        \n                          \n                            日本語\n                          \n                        \n                      \n                        \n                          \n                            한국어\n                          \n                        \n                      \n                    \n                  \n                  \n                \n              \n            \n          \n        \n      \n    \n  \n\n\n    \n\n\n    \n\n                    \n                \n\n                \n                    \n                        \n    \n        \n            \n\n\n\n\n    \n    \n  \n  \n    \n      \n        \n          \n            \n            \n          \n\n          \n            \n              \n              \n            \n          \n        \n        \n          \n          \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n              \n                \n                \n              \n            \n          \n        \n        \n        \n          \n            \n            \n          \n          \n            \n            \n          \n        \n      \n    Back to toolkits\n          \n            SEO\n            \n            \n          \n          \n            \n              \n                \n                \n                \n              \n            \n                  \n                \n          \n            Competitive Research\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            Keyword Research\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            Link Building\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n                  \n                \n          \n            On Page & Tech SEO\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n            Content Ideas\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n            Extras\n              \n                \n                \n                \n              \n                \n                \n                \n              \n                \n                \n                \n              \n            \n                  \n                \n                  \n                \n                  \n                \n          \n        \n\n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n      \n        \n      \n    \n\n    \n      \n    \n\n    \n      \n    \n  \n\n\n    \n\n\n        \n    \n\n                    \n                \n\n                \n                    \n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();\n                            \n                        \n        \n\n\n\n        \n\n\n    \n\n                    \n\n                    \n                        \n                            \n    \n        \n\n\n\n\n    \n        \n            Contact us\n            About us\n            Blog\n            \n                English\n                \n                    \n                        \n                            \n                                English\n                            \n                        \n                    \n                        \n                            \n                                Deutsch\n                            \n                        \n                    \n                        \n                            \n                                Español\n                            \n                        \n                    \n                        \n                            \n                                Français\n                            \n                        \n                    \n                        \n                            \n                                Italiano\n                            \n                        \n                    \n                        \n                            \n                                Nederlands\n                            \n                        \n                    \n                        \n                            \n                                Polski\n                            \n                        \n                    \n                        \n                            \n                                Português (Brasil)\n                            \n                        \n                    \n                        \n                            \n                                Svenska\n                            \n                        \n                    \n                        \n                            \n                                Tiếng Việt\n                            \n                        \n                    \n                        \n                            \n                                Türkçe\n                            \n                        \n                    \n                        \n                            \n                                中文\n                            \n                        \n                    \n                        \n                            \n                                日本語\n                            \n                        \n                    \n                        \n                            \n                                한국어\n                            \n                        \n                    \n                \n            \n        \n        \n            See plans and pricing\n            Get started with Semrush\n        \n    \n    \n        \n            Contact us\n            Cookie settings\n            Legal info\n            Privacy policy\n            Do not sell my personal info\n        \n        \n            © 2008 - 2025 Semrush. All rights reserved.",
+      "parentText": "\n            \n    \n        \n        \n    \n\n\n\n\n            \n\n            \n                \n\n\n\n\n    Skip to content\n\n\n\n                \n                    \n\n\n                    \n    \n    \n    \n       ",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1298,
+        "height": 1776.59375,
+        "top": 0,
+        "right": 1298,
+        "bottom": 1776.59375,
+        "left": 0
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "srf-layout-main-content-wrapper",
+      "id": "",
+      "dataTestId": null,
+      "text": "window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();\n                            \n                        \n        \n\n\n\n        \n\n\n    \n\n                    \n\n                    \n                        \n                            \n    \n        \n\n\n\n\n    \n        \n            Contact us\n            About us\n            Blog\n            \n                English\n                \n                    \n                        \n                            \n                                English\n                            \n                        \n                    \n                        \n                            \n                                Deutsch\n                            \n                        \n                    \n                        \n                            \n                                Español\n                            \n                        \n                    \n                        \n                            \n                                Français\n                            \n                        \n                    \n                        \n                            \n                                Italiano\n                            \n                        \n                    \n                        \n                            \n                                Nederlands\n                            \n                        \n                    \n                        \n                            \n                                Polski\n                            \n                        \n                    \n                        \n                            \n                                Português (Brasil)\n                            \n                        \n                    \n                        \n                            \n                                Svenska\n                            \n                        \n                    \n                        \n                            \n                                Tiếng Việt\n                            \n                        \n                    \n                        \n                            \n                                Türkçe\n                            \n                        \n                    \n                        \n                            \n                                中文\n                            \n                        \n                    \n                        \n                            \n                                日本語\n                            \n                        \n                    \n                        \n                            \n                                한국어\n                            \n                        \n                    \n                \n            \n        \n        \n            See plans and pricing\n            Get started with Semrush\n        \n    \n    \n        \n            Contact us\n            Cookie settings\n            Legal info\n            Privacy policy\n            Do not sell my personal info\n        \n        \n            © 2008 - 2025 Semrush. All rights reserved.",
+      "parentText": "\n                \n\n\n\n\n    Skip to content\n\n\n\n                \n                    \n\n\n                    \n    \n    \n    \n        \n            \n                Your browser or operating system is out o",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1678.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1776.59375,
+        "left": 230
+      }
+    },
+    {
+      "tagName": "MAIN",
+      "className": "srf-layout__body",
+      "id": "root-content",
+      "dataTestId": null,
+      "text": "window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currencies\":[\"EUR\"]},{\"code\":\"ch\",\"currencies\":[\"CHF\"]},{\"code\":\"kh\",\"currencies\":[\"KHR\"]},{\"code\":\"cz\",\"currencies\":[\"CZK\"]},{\"code\":\"hk\",\"currencies\":[\"HKD\"]},{\"code\":\"ng\",\"currencies\":[\"NGN\"]},{\"code\":\"zm\",\"currencies\":[\"ZMW\"]},{\"code\":\"br\",\"currencies\":[\"BRL\"]},{\"code\":\"kz\",\"currencies\":[\"KZT\"]},{\"code\":\"nl\",\"currencies\":[\"EUR\"]},{\"code\":\"si\",\"currencies\":[\"EUR\"]},{\"code\":\"bw\",\"currencies\":[\"BWP\"]},{\"code\":\"ca\",\"currencies\":[\"CAD\"]},{\"code\":\"fr\",\"currencies\":[\"EUR\"]},{\"code\":\"hn\",\"currencies\":[\"HNL\"]},{\"code\":\"jo\",\"currencies\":[\"JOD\"]},{\"code\":\"mg\",\"currencies\":[\"MGA\"]},{\"code\":\"ma\",\"currencies\":[\"MAD\"]},{\"code\":\"at\",\"currencies\":[\"EUR\"]},{\"code\":\"bh\",\"currencies\":[\"BHD\"]},{\"code\":\"mu\",\"currencies\":[\"MUR\"]},{\"code\":\"ge\",\"currencies\":[\"GEL\"]},{\"code\":\"mx\",\"currencies\":[\"MXN\"]},{\"code\":\"sv\",\"currencies\":[\"USD\"]},{\"code\":\"no\",\"currencies\":[\"NOK\"]},{\"code\":\"th\",\"currencies\":[\"THB\"]},{\"code\":\"bz\",\"currencies\":[\"BZD\"]},{\"code\":\"cm\",\"currencies\":[\"XAF\"]},{\"code\":\"it\",\"currencies\":[\"EUR\"]},{\"code\":\"me\",\"currencies\":[\"EUR\"]},{\"code\":\"ro\",\"currencies\":[\"RON\"]},{\"code\":\"sn\",\"currencies\":[\"XOF\"]},{\"code\":\"sg\",\"currencies\":[\"SGD\"]},{\"code\":\"ua\",\"currencies\":[\"UAH\"]},{\"code\":\"hr\",\"currencies\":[\"HRK\"]},{\"code\":\"in\",\"currencies\":[\"INR\"]},{\"code\":\"mn\",\"currencies\":[\"MNT\"]},{\"code\":\"tn\",\"currencies\":[\"TND\"]},{\"code\":\"zw\",\"currencies\":[\"USD\"]},{\"code\":\"ie\",\"currencies\":[\"EUR\"]},{\"code\":\"ly\",\"currencies\":[\"LYD\"]},{\"code\":\"bs\",\"currencies\":[\"BSD\"]},{\"code\":\"be\",\"currencies\":[\"EUR\"]},{\"code\":\"il\",\"currencies\":[\"ILS\"]},{\"code\":\"bd\",\"currencies\":[\"BDT\"]},{\"code\":\"ba\",\"currencies\":[\"BAM\"]},{\"code\":\"ee\",\"currencies\":[\"EUR\"]},{\"code\":\"kw\",\"currencies\":[\"KWD\"]},{\"code\":\"rs\",\"currencies\":[\"RSD\"]},{\"code\":\"lu\",\"currencies\":[\"EUR\"]},{\"code\":\"na\",\"currencies\":[\"NAD\"]},{\"code\":\"uy\",\"currencies\":[\"UYU\"]},{\"code\":\"ao\",\"currencies\":[\"AOA\"]},{\"code\":\"dk\",\"currencies\":[\"DKK\"]},{\"code\":\"jp\",\"currencies\":[\"JPY\"]},{\"code\":\"lb\",\"currencies\":[\"LBP\"]},{\"code\":\"pl\",\"currencies\":[\"PLN\"]},{\"code\":\"us\",\"currencies\":[\"USD\"]},{\"code\":\"af\",\"currencies\":[\"AFN\"]},{\"code\":\"al\",\"currencies\":[\"ALL\"]},{\"code\":\"au\",\"currencies\":[\"AUD\"]},{\"code\":\"cl\",\"currencies\":[\"CLP\"]},{\"code\":\"fi\",\"currencies\":[\"EUR\"]},{\"code\":\"za\",\"currencies\":[\"ZAR\"]},{\"code\":\"ar\",\"currencies\":[\"ARS\"]},{\"code\":\"gr\",\"currencies\":[\"EUR\"]},{\"code\":\"is\",\"currencies\":[\"ISK\"]},{\"code\":\"my\",\"currencies\":[\"MYR\"]},{\"code\":\"pk\",\"currencies\":[\"PKR\"]},{\"code\":\"sk\",\"currencies\":[\"EUR\"]},{\"code\":\"am\",\"currencies\":[\"AMD\"]},{\"code\":\"co\",\"currencies\":[\"COP\"]},{\"code\":\"gy\",\"currencies\":[\"GYD\"]},{\"code\":\"cv\",\"currencies\":[\"CVE\"]},{\"code\":\"id\",\"currencies\":[\"IDR\"]},{\"code\":\"bg\",\"currencies\":[\"BGN\"]},{\"code\":\"jm\",\"currencies\":[\"JMD\"]},{\"code\":\"ph\",\"currencies\":[\"PHP\"]},{\"code\":\"uk\",\"currencies\":[\"GBP\"]},{\"code\":\"az\",\"currencies\":[\"AZN\"]},{\"code\":\"es\",\"currencies\":[\"EUR\"]},{\"code\":\"ec\",\"currencies\":[\"USD\"]},{\"code\":\"eg\",\"currencies\":[\"EGP\"]},{\"code\":\"lt\",\"currencies\":[\"EUR\"]},{\"code\":\"mz\",\"currencies\":[\"MZN\"]},{\"code\":\"tr\",\"currencies\":[\"TRY\"]},{\"code\":\"cr\",\"currencies\":[\"CRC\"]},{\"code\":\"de\",\"currencies\":[\"EUR\"]},{\"code\":\"lk\",\"currencies\":[\"LKR\"]},{\"code\":\"dz\",\"currencies\":[\"DZD\"]},{\"code\":\"gh\",\"currencies\":[\"GHS\"]},{\"code\":\"gt\",\"currencies\":[\"GTQ\"]},{\"code\":\"lv\",\"currencies\":[\"EUR\"]},{\"code\":\"ni\",\"currencies\":[\"NIO\"]},{\"code\":\"py\",\"currencies\":[\"PYG\"]},{\"code\":\"qa\",\"currencies\":[\"QAR\"]},{\"code\":\"kr\",\"currencies\":[\"KRW\"]},{\"code\":\"bo\",\"currencies\":[\"BOB\"]},{\"code\":\"cy\",\"currencies\":[\"EUR\"]},{\"code\":\"ht\",\"currencies\":[\"HTG\"]},{\"code\":\"md\",\"currencies\":[\"MDL\"]},{\"code\":\"sa\",\"currencies\":[\"SAR\"]},{\"code\":\"ve\",\"currencies\":[\"VEF\"]},{\"code\":\"cd\",\"currencies\":[\"CDF\"]},{\"code\":\"om\",\"currencies\":[\"OMR\"]},{\"code\":\"ae\",\"currencies\":[\"AED\"]},{\"code\":\"hu\",\"currencies\":[\"HUF\"]},{\"code\":\"nz\",\"currencies\":[\"NZD\"]},{\"code\":\"tt\",\"currencies\":[\"TTD\"]},{\"code\":\"vn\",\"currencies\":[\"VND\"]},{\"code\":\"do\",\"currencies\":[\"DOP\"]},{\"code\":\"et\",\"currencies\":[\"ETB\"]},{\"code\":\"tw\",\"currencies\":[\"TWD\"]},{\"code\":\"by\",\"currencies\":[\"BYN\"]},{\"code\":\"ru\",\"currencies\":[\"RUB\"]},{\"code\":\"se\",\"currencies\":[\"SEK\"]},{\"code\":\"bn\",\"currencies\":[\"BND\"]},{\"code\":\"mt\",\"currencies\":[\"EUR\"]},{\"code\":\"np\",\"currencies\":[\"NPR\"]},{\"code\":\"pe\",\"currencies\":[\"PEN\"]}],\"buildTimestamp\":1762164176642}';\n  \n\n!function(){const e=/[!.\\\\-_<>,\\'`\\\"?+&:;/^*%$#@~\\d]/g,t=t=>\"\"!==t.replace(e,\"\").trim(),n=e=>!(decodeURIComponent(e.hostname).includes(\" \")||decodeURIComponent(e.pathname).includes(\" \"))&&(\"\"!==e.search||\"/\"!==e.pathname||(e=>{const n=e.split(\".\");return n.length>1&&n.every(t)})(e.hostname)),r=e=>{try{return new URL(e)}catch(e){return null}},s=(()=>{let e=null,s=null;return o=>{if(o===s)return e;s=o;const l=r(o);if(null!=l&&\"\"!==l.hostname)return e=l.hostname,e;const c=o.trim(),i=t(c),a=r(\"https:\"+c);return i&&null!=a&&n(a)?(e=a.hostname,e):(e=null,e)}})();window.__kmtSearchType={isKeyword:e=>null==s(e),getBrandKeyword:e=>{const t=s(e);return null==t?e:(e=>{const t=e.split(\".\"),n=t.length;return n<2?e:2===n?t[0]:t.filter((e,t)=>\"www\"!==e&&t<n-1).join(\" \")})(t)}}}(),fetch(\"/my_reports/api/v1/lite-order\").then(e=>e.json()).then(e=>{if(\"success\"===e.status){const t=document.createElement(\"link\");t.href=e.result.script,t.rel=\"prefetch\",t.as=\"script\",t.crossOrigin=\"anonymous\",document.body.appendChild(t);const n=document.createElement(\"link\");n.href=e.result.styles,n.rel=\"prefetch\",n.as=\"style\",n.crossOrigin=\"anonymous\",document.body.appendChild(n),window.__kmtPdfScript=e.result.script,window.__kmtPdfStyle=e.result.styles}}).catch(e=>{console.warn(\"pdf doesn't load: \",e)}),function(){const e=new URLSearchParams(window.location.search),t=e.get(\"q\"),n=e.get(\"db\"),r=e.get(\"domain\"),s=window.sessionStorage.getItem(\"__domain_keyword_research\"),o=e.get(\"location\"),l=window.location.pathname;let c=[];try{c=JSON.parse(window.__koStore).databases}catch(e){console.warn(\"Problems with the preloaded store: \",e)}if(null==t||\"\"===t||null!=o&&\"\"!==o||null!=r||null!=s||l.includes(\"/bulk\"))return;const{preferred_db:i}=window.sm2&&window.sm2.user||{preferred_db:\"us\"},a=null==n?i:(e=>e.toLowerCase().replace(\"ext\",\"\").replace(\"ml\",\"\").replace(\"mobile\",\"\").replace(\"-\",\"\"))(n);window.__koPredefinedDb=a;const d=window.sm2&&window.sm2.user&&window.sm2.user.id||0,u=window.sm2&&window.sm2.user&&window.sm2.user.api_key||\"\",w=e.get(\"date\");let m;if(null==w||w.length<6)m=\"\";else{const e=w.slice(0,4),t=w.slice(4,6);if(isNaN(Number(e))||isNaN(Number(t)))m=\"\";else{const n=new Date,r=new Date(e+\"-\"+t+\"-15\");m=r>n||n.getUTCFullYear()===r.getUTCFullYear()&&n.getUTCMonth()===r.getUTCMonth()?\"\":w}}const h={0:0,1:1};let p=h[e.get(\"device\")];null==p&&(p=h[0]);const _=\"__EMPTY_CURRENCY__\";let f=e.get(\"currency\");const{currencies:y}=c.find(e=>e.code===a)||{currencies:[]};null==f?f=_:(f=f.toUpperCase(),\"USD\"!==f&&y.length>0&&y.every(e=>e!==f)&&(f=_));const g=(e,t)=>fetch(\"/kwogw/rpc\",{method:\"POST\",mode:\"cors\",headers:{\"content-type\":\"application/json; charset=utf-8\"},body:JSON.stringify({id:1,jsonrpc:\"2.0\",method:e,params:t})}).then(e=>e.json()),k=g(\"user.GetSettings\",{APIKey:u,UserId:d}),b=k.then(e=>{const t=e?.result?.Currencies??{},n=y.find(e=>t[a]===e)||\"USD\";return f===_?n:f}),C=g(\"user.GetInfo\",{api_key:u,user_id:d});window.__koData={user:C,settings:k,info:b.then(e=>g(\"keywords.GetInfo\",{user_id:d,api_key:u,device:p,database:a,currency:e,phrase:t,date:m}))}}();\n@keyframes r {\n        0% {\n            transform: rotate(0deg);\n        }\n\n        100% {\n            transform: rotate(360deg);\n        }\n    }\n    .sc {\n        width: 100%;\n        height: 100%;\n        min-height: 100vh;\n        display: flex;\n        justify-content: center;\n        box-sizing: border-box;\n        padding-bottom: 200px;\n    }\n\n    .s {\n        width: 72px;\n        height: 72px;\n        fill: #c4c7cf;\n        box-sizing: border-box;\n        animation: r 0.75s infinite linear;\n        position: sticky;\n        top: calc(50vh - 36px);\n    }HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all(function() {\n    setTimeout(function(){\n    var c = document.createElement(\"script\"); c.src = \"https://static.semrush.com/keyword-overview/overview_app.487db97bba17e69941b2.js\", document.body.appendChild(c);\n    }, 0);\n    })();",
+      "parentText": "\n                    \n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "",
+      "id": "app",
+      "dataTestId": null,
+      "text": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "\n                        \n    \n        \n                            \n                                \n\n  \n    window.__koStore = '{\"databases\":[{\"code\":\"pa\",\"currencies\":[\"USD\"]},{\"code\":\"pt\",\"currenc",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-page-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insigh",
+      "rect": {
+        "x": 230,
+        "y": 98.546875,
+        "width": 1068,
+        "height": 1466.046875,
+        "top": 98.546875,
+        "right": 1298,
+        "bottom": 1564.59375,
+        "left": 230
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-page-layout__content",
+      "id": "",
+      "dataTestId": null,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "HomeSEOKeyword OverviewKeyword Research courseUser manualSend feedbackKeyword Overview:talking botUnited StatesDesktopNov 27, 2025USDOverviewBulk AnalysisTry out our enhanced AI analysis to get insigh",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "",
+      "id": "",
+      "dataTestId": null,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolu",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1388.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1660.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-animate-slide-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolu",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1388.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1660.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-animate-slide-layout__slide",
+      "id": "",
+      "dataTestId": null,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolu",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-content-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolu",
+      "rect": {
+        "x": 262,
+        "y": 271.71875,
+        "width": 1004,
+        "height": 1292.875,
+        "top": 271.71875,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-overlay-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "Try out our enhanced AI analysis to get insights on Potential Traffic and Potential SERP Position for your domain.National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolu",
+      "rect": {
+        "x": 262,
+        "y": 348.59375,
+        "width": 1004,
+        "height": 1216,
+        "top": 348.59375,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-national-metrics-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/aThis keyword could be your next growth driver.Go beyond basic volume and discover advanced metrics with Semrush Pro.Get startedKeyword ideasKeyword Variations1.3KTotal Volume: 10.5KKeywordsVolumeKD %talk to an ai bot88085ai talk bot59083bot talk gps tracker for kids39031ai talk bots32079talking head ai chat bot32048View all 1,274 keywordsQuestions282Total Volume: 1.8KKeywordsVolumeKD %how to tell if you're talking to a bot11030how to tell if you are talking to a bot7027how to tell if your talking to a bot5017how to know if you are talking to a bot40n/ahow to know if you're talking to a bot4020View all 282 keywordsKeyword StrategyGet topics, pillar and subpages automaticallytalking botIntents: Informational 49%, Commercial 50%, Transactional 1%ai chatbot onlineIntents: Informational 7%, Commercial 93%chat bot aiIntents: Navigational 44%, Commercial 6%, Transactional 50%ai chatbot no sign upIntents: Commercial 100%top ai chatbotsIntents: Commercial 100%best ai chatbotsView all",
+      "parentText": "National metricsAI-poweredSelect locationUpdate0/1,000Export to PDFKeyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete her",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 1004,
+        "height": 1168,
+        "top": 396.59375,
+        "right": 1266,
+        "bottom": 1564.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "SECTION",
+      "className": "kwo-top-widgets-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40deGermany40idIndonesia40Other1.3KIntentInformationalCommercialTrend100500011CPC$2.20Competitive Density0.35PLAn/aAdsn/a",
+      "parentText": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 1004,
+        "height": 294,
+        "top": 396.59375,
+        "right": 1266,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-top-widgets-layout__item kwo-top-widgets-layout__item_volume",
+      "id": "",
+      "dataTestId": null,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "parentText": "Keyword summaryVolume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.Global Volume2.1KjpJapan320usUnited States260inIndia140brBrazil40",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 294,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-widget-layout",
+      "id": "",
+      "dataTestId": "seo-metrics-widget",
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 294,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 690.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-widget-layout__content",
+      "id": "",
+      "dataTestId": null,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 262,
+        "y": 396.59375,
+        "width": 239,
+        "height": 271,
+        "top": 396.59375,
+        "right": 501,
+        "bottom": 667.59375,
+        "left": 262
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-volume-widget-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 282,
+        "y": 416.59375,
+        "width": 199,
+        "height": 231,
+        "top": 416.59375,
+        "right": 481,
+        "bottom": 647.59375,
+        "left": 282
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-volume-widget-layout__line",
+      "id": "",
+      "dataTestId": null,
+      "text": "Keyword Difficulty54%Difficult",
+      "parentText": "Volume260Keyword Difficulty54%DifficultYou will need to have 36 referring domains and optimized content to compete here.",
+      "rect": {
+        "x": 282,
+        "y": 509.59375,
+        "width": 199,
+        "height": 76,
+        "top": 509.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-n-rows-layout",
+      "id": "",
+      "dataTestId": null,
+      "text": "Keyword Difficulty54%Difficult",
+      "parentText": "Keyword Difficulty54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 509.59375,
+        "width": 199,
+        "height": 76,
+        "top": 509.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-kd",
+      "id": "",
+      "dataTestId": "kd-metric",
+      "text": "54%Difficult",
+      "parentText": "Keyword Difficulty54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 199,
+        "height": 48,
+        "top": 537.59375,
+        "right": 481,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "tagName": "DIV",
+      "className": "kwo-kd__metrics-wrapper",
+      "id": "",
+      "dataTestId": null,
+      "text": "54%Difficult",
+      "parentText": "54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 53.953125,
+        "height": 48,
+        "top": 537.59375,
+        "right": 335.953125,
+        "bottom": 585.59375,
+        "left": 282
+      }
+    },
+    {
+      "tagName": "SPAN",
+      "className": "kwo-kd__metric",
+      "id": "",
+      "dataTestId": null,
+      "text": "54%",
+      "parentText": "54%Difficult",
+      "rect": {
+        "x": 282,
+        "y": 537.59375,
+        "width": 53.953125,
+        "height": 28,
+        "top": 537.59375,
+        "right": 335.953125,
+        "bottom": 565.59375,
+        "left": 282
+      }
+    }
+  ]
+}

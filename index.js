@@ -1,5 +1,5 @@
 const express = require('express');
-const { SemrushScraper } = require('./semrush-scraper');
+const { SemrushScraper } = require('./corrected-semrush-scraper');
 const config = require('./config');
 
 const app = express();
@@ -12,11 +12,14 @@ app.use(express.urlencoded({ extended: true }));
 // Initialize scraper
 const scraper = new SemrushScraper();
 
-// Initialize browser on startup
+// Initialize browser and login on startup
 (async () => {
   try {
+    console.log('Initializing Semrush scraper...');
     await scraper.initialize();
-    console.log('Semrush scraper initialized successfully');
+    console.log('Browser initialized, starting login...');
+    await scraper.login();
+    console.log('Semrush scraper initialized and logged in successfully!');
   } catch (error) {
     console.error('Failed to initialize scraper:', error);
     process.exit(1);
@@ -91,5 +94,3 @@ app.listen(port, () => {
   console.log(`Keyword Overview: http://localhost:${port}/keyword-overview?keyword=your-keyword`);
   console.log(`Keyword Magic: http://localhost:${port}/keyword-magic?keyword=your-keyword`);
 });
-
-module.exports = app;

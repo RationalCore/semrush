@@ -8,7 +8,7 @@ const config = {
   // Semrush credentials
   semrush: {
     username: 'akiereisen4133@hotmail.com',
-    password: 'BrsJRi1TVghS'
+    password: 'BrsJRi1TVghS+'
   },
 
   // Proxy configuration

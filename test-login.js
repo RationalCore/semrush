@@ -1,4 +1,4 @@
-const { SemrushScraper } = require('./semrush-scraper');
+const { SemrushScraper } = require('./corrected-semrush-scraper');
 
 async function testLogin() {
   console.log('Testing proxy connectivity first...');
