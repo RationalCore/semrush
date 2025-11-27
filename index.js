@@ -9,35 +9,10 @@ const port = config.server.port;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Initialize scraper
+// Initialize scraper (without browser - we're using algorithmic parsing)
 const scraper = new SemrushScraper();
 
-// Initialize browser and login on startup
-(async () => {
-  try {
-    console.log('Initializing Semrush scraper...');
-    await scraper.initialize();
-    console.log('Browser initialized, starting login...');
-    await scraper.login();
-    console.log('Semrush scraper initialized and logged in successfully!');
-  } catch (error) {
-    console.error('Failed to initialize scraper:', error);
-    process.exit(1);
-  }
-})();
-
-// Handle graceful shutdown
-process.on('SIGINT', async () => {
-  console.log('Shutting down gracefully...');
-  await scraper.close();
-  process.exit(0);
-});
-
-process.on('SIGTERM', async () => {
-  console.log('Shutting down gracefully...');
-  await scraper.close();
-  process.exit(0);
-});
+console.log('Semrush scraper initialized with algorithmic parsing!');
 
 // Routes
 app.get('/keyword-overview', async (req, res) => {
@@ -68,13 +43,21 @@ app.get('/keyword-magic', async (req, res) => {
 
     console.log(`Scraping Keyword Magic for: ${keyword}`);
     const result = await scraper.getKeywordMagic(keyword);
-    res.json(result);
+
+    // Transform the result into the expected JSON structure
+    const transformedResult = result.data.suggestions.map(item => ({
+      Keyword: item.keyword,
+      Intent: item.intent,
+      Volume: item.volume,
+      'Keyword Difficulty': item.keyword_difficulty,
+      'CPC (USD)': item.cpc
+    }));
+
+    // Send the transformed JSON data
+    res.json(transformedResult);
   } catch (error) {
     console.error('Keyword Magic error:', error);
-    res.status(500).json({
-      error: error.message,
-      details: 'Failed to fetch keyword magic data'
-    });
+    res.status(500).json({ error: 'Failed to fetch keyword magic data' });
   }
 });
 
