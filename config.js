@@ -7,20 +7,20 @@ const config = {
 
   // Semrush credentials
   semrush: {
-    username: 'akiereisen4133@hotmail.com',
-    password: 'BrsJRi1TVghS+'
+    username: 'bohchrisawn65909@hotmail.com',
+    password: 'AAf94HgCtNf'
   },
 
   // Proxy configuration
   proxy: {
-    server: 'http://38.152.62.207:8000',
-    username: 'jJPfHX',
-    password: 'nuUCJ0'
+    server: 'http://45.4.198.164:8000',
+    username: 'DJ4nGU',
+    password: 'FyoaQ6'
   },
 
   // Browser configuration
   browser: {
-    headless: true,
+    headless: false,
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
@@ -53,7 +53,11 @@ const config = {
     login: 'https://www.semrush.com/login/',
     keywordOverview: (keyword, db = 'us') => `https://www.semrush.com/analytics/keywordoverview/?q=${encodeURIComponent(keyword)}&db=${db}`,
     keywordMagic: (keyword, db = 'us') => `https://www.semrush.com/analytics/keywordmagic/?q=${encodeURIComponent(keyword)}&db=${db}`,
-    successUrls: ['**/home/**', '**/dashboard/**', '**/products/**']
+    successUrls: [
+      'https://www.semrush.com/home/',
+      'https://www.semrush.com/dashboard/',
+      'https://www.semrush.com/products/'
+    ]
   },
 
   // Default settings
