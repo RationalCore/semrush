@@ -60,6 +60,33 @@ app.get('/keyword-magic', async (req, res) => {
   }
 });
 
+app.get('/keyword-overview', async (req, res) => {
+  try {
+    const keyword = req.query.keyword || req.query.q;
+    if (!keyword) {
+      return res.status(400).json({ error: 'Keyword parameter is required' });
+    }
+
+    console.log(`🌐 New API request: "${keyword}" - Keyword Overview`);
+
+    const startTime = Date.now();
+    const result = await scraper.getKeywordOverview(keyword);
+    const duration = Date.now() - startTime;
+
+    if (result.success) {
+      console.log(`✅ SUCCESS: Keyword Overview returned in ${duration}ms`);
+      console.log(`📋 Keyword: "${result.data.keyword}", Volume: ${result.data.volume || result.data.global_volume || 'Unknown'}`);
+      res.json(result.data);
+    } else {
+      console.log(`❌ NO DATA: Keyword Overview failed for "${keyword}"`);
+      res.status(404).json({ error: 'Keyword data not found' });
+    }
+  } catch (error) {
+    console.error('❌ INTERNAL ERROR:', error);
+    res.status(500).json({ error: 'Internal server error' });
+  }
+});
+
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
@@ -71,6 +98,7 @@ app.get('/health', (req, res) => {
 
 app.listen(port, () => {
   console.log(`🚀 SEMrush API server running on port ${port}`);
-  console.log(`🔗 Keywords: http://localhost:${port}/keyword-magic?keyword=your-keyword`);
+  console.log(`🔗 Keyword Magic: http://localhost:${port}/keyword-magic?keyword=your-keyword`);
+  console.log(`🔗 Keyword Overview: http://localhost:${port}/keyword-overview?keyword=your-keyword`);
   console.log('📝 No API keys required - works with browser automation');
 });
