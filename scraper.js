@@ -210,6 +210,14 @@ class SemrushScraper {
         };
 
         try {
+          // Helper function to parse values, handling "n/a" cases
+          const parseValue = (value, type = 'number') => {
+            if (!value || value.toLowerCase().includes('n/a') || value.trim() === '') {
+              return type === 'number' ? 0 : '';
+            }
+            return value.trim();
+          };
+
           // Extract keyword from various sources
           result.keyword = document.querySelector('h1')?.textContent?.trim() ||
                           document.querySelector('[data-testid*="keyword"]')?.textContent?.trim() ||
@@ -219,35 +227,49 @@ class SemrushScraper {
           // PRIMARY: Find "Global Volume" text specifically and extract the number right next to it
           const bodyText = document.body?.textContent || '';
 
-          // Pattern: find "Global Volume" followed by any non-digit characters and then a number with possible multipliers
-          const globalVolumePattern = /global volume[^0-9]{0,20}([\d,]+(?:\.\d+)?)[KkMmBb]?/i;
+          // Pattern: find "Global Volume" followed by any non-digit characters and then a number with possible "n/a"
+          const globalVolumePattern = /global volume[^0-9]{0,20}([\d,]+(?:\.\d+)?|\w+)[KkMmBb]?/i;
           const globalMatch = bodyText.match(globalVolumePattern);
           console.log('Global volume match result:', globalMatch);
           if (globalMatch && globalMatch[1]) {
-            const baseValue = parseFloat(globalMatch[1].replace(/,/g, ''));
-            const fullText = globalMatch[0]; // Get the full matched text to check for multipliers
-            const multiplier = fullText.includes('K') || fullText.includes('k') ? 1000 :
-                             fullText.includes('M') || fullText.includes('m') ? 1000000 :
-                             fullText.includes('B') || fullText.includes('b') ? 1000000000 : 1;
-            result.global_volume = Math.round(baseValue * multiplier);
-            console.log(`Global volume parsed: ${baseValue} * ${multiplier} = ${result.global_volume}`);
+            const globalStr = parseValue(globalMatch[1]);
+            if (globalStr && globalStr !== '0' && globalStr !== 'n/a') {
+              const baseValue = parseFloat(globalStr.replace(/,/g, ''));
+              if (baseValue > 0) {
+                const fullText = globalMatch[0]; // Get the full matched text to check for multipliers
+                const multiplier = fullText.includes('K') || fullText.includes('k') ? 1000 :
+                                 fullText.includes('M') || fullText.includes('m') ? 1000000 :
+                                 fullText.includes('B') || fullText.includes('b') ? 1000000000 : 1;
+                result.global_volume = Math.round(baseValue * multiplier);
+                console.log(`Global volume parsed: ${baseValue} * ${multiplier} = ${result.global_volume}`);
+              }
+            }
           }
 
           // Fall back to Volume search: find regular volume for comparison
-          const volumePattern = /(?:volume|search)[^\d]{0,30}(\d{1,3}(?:,\d{3})*)/i;
+          const volumePattern = /(?:volume|search)[^\d]{0,30}(\d{1,3}(?:,\d{3})*|\w+)/i;
           const volumeMatch = bodyText.match(volumePattern);
           if (volumeMatch && volumeMatch[1]) {
-            let volumeValue = parseInt(volumeMatch[1].replace(/,/g, ''));
-            if (result.volume === null) {
-              result.volume = volumeValue;
+            const volumeStr = parseValue(volumeMatch[1]);
+            if (volumeStr && volumeStr !== '0') {
+              const volumeValue = parseInt(volumeStr.replace(/,/g, ''));
+              if (!isNaN(volumeValue) && volumeValue > 0 && result.volume === null) {
+                result.volume = volumeValue;
+              }
             }
           }
 
           // Difficulty search
-          const difficultyPattern = /difficulty[^\d]*(\d+(?:\.\d+)?)%?/i;
+          const difficultyPattern = /difficulty[^\d]*(\d+(?:\.\d+)?|\w+)%?/i;
           const difficultyMatch = bodyText.match(difficultyPattern);
           if (difficultyMatch && difficultyMatch[1]) {
-            result.keyword_difficulty = parseFloat(difficultyMatch[1].replace(/%/g, ''));
+            const difficultyStr = parseValue(difficultyMatch[1]);
+            if (difficultyStr && difficultyStr !== 'n/a') {
+              const difficultyValue = parseFloat(difficultyStr.replace(/%/g, ''));
+              if (!isNaN(difficultyValue) && difficultyValue >= 0 && difficultyValue <= 100) {
+                result.keyword_difficulty = difficultyValue;
+              }
+            }
           }
 
           // COMPREHENSIVE FALLBACK: If global_volume still null, scan all text more thoroughly
@@ -402,10 +424,19 @@ class SemrushScraper {
             continue;
           }
 
-          // Parse numeric values
+          // Parse numeric values, handling "n/a" values
+          const parseNumericValue = (str) => {
+            if (!str || str.toLowerCase().includes('n/a') || str.trim() === '') {
+              return 0;
+            }
+            const cleanStr = str.replace(/[\$,]/g, '').trim();
+            const parsed = parseFloat(cleanStr);
+            return isNaN(parsed) ? 0 : parsed;
+          };
+
           const volume = parseInt(volumeText) || 0;
           const keywordDifficulty = parseInt(kdText) || 0;
-          const cpc = parseFloat(cpcText) || 0.0;
+          const cpc = parseNumericValue(cpcText);
 
           // Only accept reasonable values
           if (volume >= 0 && keywordDifficulty >= 0 && keywordDifficulty <= 100 && cpc >= 0) {
@@ -423,7 +454,7 @@ class SemrushScraper {
 
             if (keywords.length >= limit) break;
           } else {
-            console.log(`⚠️ Invalid data: vol=${volume}, kd:${keywordDifficulty}%, cpc=$${cpc}`);
+            console.log(`⚠️ Invalid data: vol=${volume}, kd=${keywordDifficulty}%, cpc=$${cpc}`);
           }
         }
 
