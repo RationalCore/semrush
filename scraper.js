@@ -232,12 +232,16 @@ class SemrushScraper {
           if (match) {
             console.log('Regex match groups:', match);
 
-            // Group 1: Volume (or n/a flag from group 2)
+            // Group 1: Volume (or n/a flag from group 2) - FIXED: proper K/M/B handling
             if (match[2] === 'n/a') {
               result.volume = null;
             } else if (match[1]) {
-              const volumeStr = match[1].replace(/,/g, '');
-              result.volume = parseInt(volumeStr) || null;
+              const volumeStr = match[1];
+              const numValue = parseFloat(volumeStr.replace(/,/g, ''));
+              const multiplier = volumeStr.includes('K') || volumeStr.includes('k') ? 1000 :
+                               volumeStr.includes('M') || volumeStr.includes('m') ? 1000000 :
+                               volumeStr.includes('B') || volumeStr.includes('b') ? 1000000000 : 1;
+              result.volume = Math.round(numValue * multiplier) || null;
             }
 
             // Group 3: Keyword Difficulty (or n/a flag from group 4)
@@ -252,8 +256,8 @@ class SemrushScraper {
             if (match[6] === 'n/a') {
               result.global_volume = null;
             } else if (match[5]) {
-              const globalStr = match[5].replace(/,/g, '');
-              const numValue = parseFloat(globalStr);
+              const globalStr = match[5];
+              const numValue = parseFloat(globalStr.replace(/,/g, ''));
               const multiplier = globalStr.includes('K') || globalStr.includes('k') ? 1000 :
                                globalStr.includes('M') || globalStr.includes('m') ? 1000000 :
                                globalStr.includes('B') || globalStr.includes('b') ? 1000000000 : 1;
@@ -294,7 +298,27 @@ class SemrushScraper {
     }
   }
 
+
   async getKeywordMagic(keyword, limit = 20) {
+    // Priority: Try CSV method first, fallback to HTML parsing
+    try {
+      console.log(`🛒 Attempting CSV-based Keyword Magic extraction for: "${keyword}"`);
+      const result = await this.getKeywordMagicFromCSV(keyword, limit);
+
+      if (result.success && result.source === 'csv_export') {
+        console.log('🎯 CSV extraction successful!');
+        return result;
+      } else {
+        console.log('📄 CSV failed, using HTML fallback...');
+        return await this.getKeywordMagicHTML(keyword, limit);
+      }
+    } catch (error) {
+      console.log('⚠️ CSV method error, using HTML fallback:', error.message);
+      return await this.getKeywordMagicHTML(keyword, limit);
+    }
+  }
+
+  async getKeywordMagicHTML(keyword, limit = 20) {
     try {
       if (!this.page) {
         await this.initialize();
@@ -304,7 +328,7 @@ class SemrushScraper {
 
       const url = `https://www.semrush.com/analytics/keywordmagic/?q=${encodeURIComponent(keyword)}&db=us`;
 
-      console.log(`Scraping Keyword Magic for: ${keyword}`);
+      console.log(`🎨 Scraping Keyword Magic via HTML for: ${keyword}`);
 
       await this.page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
@@ -313,11 +337,11 @@ class SemrushScraper {
 
       console.log('Page loaded, extracting data using comprehensive DOM regex with CPC...');
 
-      // Extract data using the comprehensive DOM regex pattern with CPC
+      // Extract data using the comprehensive DOM regex pattern with n/a handling
       const data = await this.page.evaluate(({keyword, limit}) => {
 
-        // CORRECTED REGEX PATTERN: extracts Keyword, Volume, KD%, CPC (adapted from user's pattern)
-        const regexPattern = /Checkbox\.Text">(?!Select all keywords)([\w\s]*?)<\/span>.*?data-testid="table-cell-volume" role="cell">([\d,\.]*?)<\/div>.*?<span class="sm-cell-kd__data">([\d,\.]*?)<\/span>.*?data-testid="table-cell-cpc" role="cell">([\d,\.]*?)<\/div>/gm;
+        // ENHANCED REGEX PATTERN: extracts Keyword, Intent, Volume, KD%, CPC with n/a handling
+        const regexPattern = /Checkbox\.Text">(?!Select all keywords)([^<]+)<\/span>(?:(?!data-testid="table-row").)*?data-testid="table-cell-intent".*?(?:aria-label="|class="sm-na">)([^"<]+)(?:\.\s*Apply|<\/div>)(?:(?!data-testid="table-row").)*?data-testid="table-cell-volume"[^>]*>(?:<[^>]+>)?([^<]+)(?:<\/[^>]+>)?<\/div>(?:(?!data-testid="table-row").)*?data-testid="table-cell-kd".*?class="sm-cell-kd__data"[^>]*>(?:<[^>]+>)?([^<]+)(?:<\/[^>]+>)?<\/span>(?:(?!data-testid="table-row").)*?data-testid="table-cell-cpc"[^>]*>(?:<[^>]+>)?([^<]+)(?:<\/[^>]+>)?<\/div>/gm;
 
         const keywords = [];
         const tableHTML = document.body.innerHTML; // Get full DOM HTML
@@ -330,11 +354,12 @@ class SemrushScraper {
           matchCount++;
 
           const keywordText = match[1]?.trim();
-          const volumeText = match[2]?.replace(/,/g, '');
-          const kdText = match[3];
-          const cpcText = match[4]?.replace(/\$/, ''); // Remove $ if present
+          const intentText = match[2]?.trim();
+          const volumeText = match[3]?.replace(/,/g, '');
+          const kdText = match[4];
+          const cpcText = match[5]?.replace(/\$/, ''); // Remove $ if present
 
-          console.log(`Match ${matchCount}: "${keywordText}" (vol:${volumeText}, kd:${kdText}%, cpc:${cpcText})`);
+          console.log(`Match ${matchCount}: "${keywordText}" (intent:${intentText}, vol:${volumeText}, kd:${kdText}%, cpc:${cpcText})`);
 
           // Additional validation - skip very short or invalid keywords
           if (!keywordText || keywordText.length < 2) {
@@ -350,38 +375,41 @@ class SemrushScraper {
             continue;
           }
 
-          // Parse numeric values, handling "n/a" values
+          // Parse numeric values, returning null for "n/a" values
           const parseNumericValue = (str) => {
             if (!str || str.toLowerCase().includes('n/a') || str.trim() === '') {
-              return 0;
+              return null;
             }
             const cleanStr = str.replace(/[\$,]/g, '').trim();
             const parsed = parseFloat(cleanStr);
-            return isNaN(parsed) ? 0 : parsed;
+            return isNaN(parsed) ? null : parsed;
           };
 
-          const volume = parseInt(volumeText) || 0;
-          const keywordDifficulty = parseInt(kdText) || 0;
+          const volume = volumeText && volumeText.toLowerCase().includes('n/a') ? null : parseInt(volumeText) || null;
+          const keywordDifficulty = kdText && kdText.toLowerCase().includes('n/a') ? null : parseInt(kdText) || null;
           const cpc = parseNumericValue(cpcText);
+          const intent = intentText && intentText.toLowerCase().includes('n/a') ? null : intentText;
 
-          // Only accept reasonable values
-          if (volume >= 0 && keywordDifficulty >= 0 && keywordDifficulty <= 100 && cpc >= 0) {
-            // Clean the keyword text
-            let cleanKeyword = keywordText.replace(/[^a-zA-Z\s\-]/g, '').trim();
-
-            console.log(`✅ Adding: "${cleanKeyword}" (vol:${volume}, kd:${keywordDifficulty}%, cpc:$${cpc})`);
-
-            keywords.push({
-              keyword: cleanKeyword,
-              volume: volume,
-              keyword_difficulty: keywordDifficulty,
-              cpc: parseFloat(cpc.toFixed(2))
-            });
-
-            if (keywords.length >= limit) break;
-          } else {
-            console.log(`⚠️ Invalid data: vol=${volume}, kd=${keywordDifficulty}%, cpc=$${cpc}`);
+          // Skip rows with no valid data
+          if (volume === null && keywordDifficulty === null && cpc === null) {
+            console.log(`Skipping row with all n/a values: "${keywordText}"`);
+            continue;
           }
+
+          // Clean the keyword text
+          let cleanKeyword = keywordText.replace(/[^a-zA-Z\s\-]/g, '').trim();
+
+          console.log(`✅ Adding: "${cleanKeyword}" (intent:${intent}, vol:${volume}, kd:${keywordDifficulty}%, cpc:$${cpc})`);
+
+          keywords.push({
+            keyword: cleanKeyword,
+            intent: intent,
+            volume: volume,
+            keyword_difficulty: keywordDifficulty,
+            cpc: cpc
+          });
+
+          if (keywords.length >= limit) break;
         }
 
         console.log(`✅ Total extraction: ${keywords.length} keywords from ${matchCount} regex matches`);
@@ -389,7 +417,7 @@ class SemrushScraper {
 
       }, { keyword, limit });
 
-      console.log(`🔧 Final result: ${data.length} keywords extracted with complete CPC data`);
+      console.log(`🔧 HTML Final result: ${data.length} keywords extracted with complete CPC data`);
       console.log('Sample:', data.slice(0, 3));
 
       return {
@@ -399,16 +427,18 @@ class SemrushScraper {
           suggestions: data
         },
         timestamp: new Date().toISOString(),
-        total_suggestions: data.length
+        total_suggestions: data.length,
+        source: 'html_parsing'
       };
 
     } catch (error) {
-      console.error('❌ Keyword Magic scraping failed:', error);
+      console.error('❌ HTML Keyword Magic scraping failed:', error);
       return {
         success: false,
         error: error.message,
         data: { keyword, suggestions: [] },
-        timestamp: new Date().toISOString()
+        timestamp: new Date().toISOString(),
+        source: 'html_error'
       };
     }
   }
