@@ -131,13 +131,13 @@ class SemrushScraper {
       // Wait for content
       await this.page.waitForTimeout(25000); // Extra time for full loading
 
-      console.log('Page loaded, extracting data using DOM regex pattern...');
+      console.log('Page loaded, extracting data using comprehensive DOM regex with CPC...');
 
-      // Extract data using the working DOM regex pattern
+      // Extract data using the comprehensive DOM regex pattern with CPC
       const data = await this.page.evaluate(({keyword, limit}) => {
 
-        // WORKING REGEX PATTERN: extracts Keyword, Volume, KD%
-        const regexPattern = /="Checkbox\.Text">(?!Select all keywords)([\w\s]*?)<\/span>.*?data-testid="table-cell-volume" role="cell">([\d,\.]*)<\/div>.*?<span class="sm-cell-kd__data">([\d\.]+)%?<\/span>/g;
+        // CORRECTED REGEX PATTERN: extracts Keyword, Volume, KD%, CPC (adapted from user's pattern)
+        const regexPattern = /Checkbox\.Text">(?!Select all keywords)([\w\s]*?)<\/span>.*?data-testid="table-cell-volume" role="cell">([\d,\.]*?)<\/div>.*?<span class="sm-cell-kd__data">([\d,\.]*?)<\/span>.*?data-testid="table-cell-cpc" role="cell">([\d,\.]*?)<\/div>/gm;
 
         const keywords = [];
         const tableHTML = document.body.innerHTML; // Get full DOM HTML
@@ -152,8 +152,9 @@ class SemrushScraper {
           const keywordText = match[1]?.trim();
           const volumeText = match[2]?.replace(/,/g, '');
           const kdText = match[3];
+          const cpcText = match[4]?.replace(/\$/, ''); // Remove $ if present
 
-          console.log(`Match ${matchCount}: "${keywordText}" (vol:${volumeText}, kd:${kdText})`);
+          console.log(`Match ${matchCount}: "${keywordText}" (vol:${volumeText}, kd:${kdText}%, cpc:${cpcText})`);
 
           // Additional validation - skip very short or invalid keywords
           if (!keywordText || keywordText.length < 2) {
@@ -172,24 +173,25 @@ class SemrushScraper {
           // Parse numeric values
           const volume = parseInt(volumeText) || 0;
           const keywordDifficulty = parseInt(kdText) || 0;
+          const cpc = parseFloat(cpcText) || 0.0;
 
           // Only accept reasonable values
-          if (volume >= 0 && keywordDifficulty >= 0 && keywordDifficulty <= 100) {
+          if (volume >= 0 && keywordDifficulty >= 0 && keywordDifficulty <= 100 && cpc >= 0) {
             // Clean the keyword text
             let cleanKeyword = keywordText.replace(/[^a-zA-Z\s\-]/g, '').trim();
 
-            console.log(`✅ Adding: "${cleanKeyword}" (vol:${volume}, kd:${keywordDifficulty}%)`);
+            console.log(`✅ Adding: "${cleanKeyword}" (vol:${volume}, kd:${keywordDifficulty}%, cpc:$${cpc})`);
 
             keywords.push({
               keyword: cleanKeyword,
               volume: volume,
               keyword_difficulty: keywordDifficulty,
-              cpc: 0.0 // Not extracted in this pattern
+              cpc: parseFloat(cpc.toFixed(2))
             });
 
             if (keywords.length >= limit) break;
           } else {
-            console.log(`⚠️ Invalid data: vol=${volume}, kd=${keywordDifficulty}%`);
+            console.log(`⚠️ Invalid data: vol=${volume}, kd=${keywordDifficulty}%, cpc=$${cpc}`);
           }
         }
 
@@ -198,7 +200,7 @@ class SemrushScraper {
 
       }, { keyword, limit });
 
-      console.log(`🔧 Final result: ${data.length} keywords extracted using DOM regex`);
+      console.log(`🔧 Final result: ${data.length} keywords extracted with complete CPC data`);
       console.log('Sample:', data.slice(0, 3));
 
       return {
