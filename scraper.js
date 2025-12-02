@@ -198,7 +198,7 @@ class SemrushScraper {
       console.log('Waiting additional time for dynamic metrics to load...');
       await this.page.waitForTimeout(3000);
 
-      // Extract data from the page
+      // Extract data from the page using the correct regex pattern
       const data = await this.page.evaluate(() => {
         const result = {
           keyword: '',
@@ -210,137 +210,63 @@ class SemrushScraper {
         };
 
         try {
-          // Helper function to parse values, handling "n/a" cases
-          const parseValue = (value, type = 'number') => {
-            if (!value || value.toLowerCase().includes('n/a') || value.trim() === '') {
-              return type === 'number' ? 0 : '';
-            }
-            return value.trim();
-          };
-
-          // Extract keyword from various sources
-          result.keyword = document.querySelector('h1')?.textContent?.trim() ||
+          // Extract keyword more precisely - avoid page titles like "Keyword Overview: ..."
+          let rawKeyword = document.querySelector('h1')?.textContent?.trim() ||
                           document.querySelector('[data-testid*="keyword"]')?.textContent?.trim() ||
                           document.querySelector('.keyword-title')?.textContent?.trim() ||
                           '';
 
-          // PRIMARY: Find "Global Volume" text specifically and extract the number right next to it
-          const bodyText = document.body?.textContent || '';
+          // Remove "Keyword Overview:" prefix if present
+          result.keyword = rawKeyword.replace(/^Keyword Overview:\s*/i, '').trim();
 
-          // Pattern: find "Global Volume" followed by any non-digit characters and then a number with possible "n/a"
-          const globalVolumePattern = /global volume[^0-9]{0,20}([\d,]+(?:\.\d+)?|\w+)[KkMmBb]?/i;
-          const globalMatch = bodyText.match(globalVolumePattern);
-          console.log('Global volume match result:', globalMatch);
-          if (globalMatch && globalMatch[1]) {
-            const globalStr = parseValue(globalMatch[1]);
-            if (globalStr && globalStr !== '0' && globalStr !== 'n/a') {
-              const baseValue = parseFloat(globalStr.replace(/,/g, ''));
-              if (baseValue > 0) {
-                const fullText = globalMatch[0]; // Get the full matched text to check for multipliers
-                const multiplier = fullText.includes('K') || fullText.includes('k') ? 1000 :
-                                 fullText.includes('M') || fullText.includes('m') ? 1000000 :
-                                 fullText.includes('B') || fullText.includes('b') ? 1000000000 : 1;
-                result.global_volume = Math.round(baseValue * multiplier);
-                console.log(`Global volume parsed: ${baseValue} * ${multiplier} = ${result.global_volume}`);
-              }
+          // Use the actual input keyword if DOM keyword is malformed
+          if (!result.keyword || result.keyword.length > 50 || result.keyword.includes('\n')) {
+            result.keyword = '';
+          }
+
+          // Extract data using the provided regex pattern
+          const bodyHTML = document.body?.innerHTML || '';
+          const pattern = /Volume<\/span><\/div>.*?(?:(?:data-testid="volume-total">([\d|\.\,|K|M|B]*)<span class="kwo-widget-total__flag">)|(?:<div class="kwo-na">(n\/a)<\/div>)).*?>Keyword Difficulty<\/span><\/div>.*?(?:(?:<span class="kwo-kd__metric">(\d*?%)<\/span>)|(?:<div class="kwo-na">(n\/a)<\/div>)).*?>Global Volume<\/span><\/div>.*?(?:(?:data-testid="global-volume-total">([\d|\.\,|K|M|B]*)<\/span>)|(?:<div class="kwo-na">(n\/a)<\/div>))/;
+
+          const match = bodyHTML.match(pattern);
+          if (match) {
+            console.log('Regex match groups:', match);
+
+            // Group 1: Volume (or n/a flag from group 2)
+            if (match[2] === 'n/a') {
+              result.volume = null;
+            } else if (match[1]) {
+              const volumeStr = match[1].replace(/,/g, '');
+              result.volume = parseInt(volumeStr) || null;
+            }
+
+            // Group 3: Keyword Difficulty (or n/a flag from group 4)
+            if (match[4] === 'n/a') {
+              result.keyword_difficulty = null;
+            } else if (match[3]) {
+              const difficultyStr = match[3].replace('%', '');
+              result.keyword_difficulty = parseInt(difficultyStr) || null;
+            }
+
+            // Group 5: Global Volume (or n/a flag from group 6)
+            if (match[6] === 'n/a') {
+              result.global_volume = null;
+            } else if (match[5]) {
+              const globalStr = match[5].replace(/,/g, '');
+              const numValue = parseFloat(globalStr);
+              const multiplier = globalStr.includes('K') || globalStr.includes('k') ? 1000 :
+                               globalStr.includes('M') || globalStr.includes('m') ? 1000000 :
+                               globalStr.includes('B') || globalStr.includes('b') ? 1000000000 : 1;
+              result.global_volume = Math.round(numValue * multiplier) || null;
             }
           }
 
-          // Fall back to Volume search: find regular volume for comparison
-          const volumePattern = /(?:volume|search)[^\d]{0,30}(\d{1,3}(?:,\d{3})*|\w+)/i;
-          const volumeMatch = bodyText.match(volumePattern);
-          if (volumeMatch && volumeMatch[1]) {
-            const volumeStr = parseValue(volumeMatch[1]);
-            if (volumeStr && volumeStr !== '0') {
-              const volumeValue = parseInt(volumeStr.replace(/,/g, ''));
-              if (!isNaN(volumeValue) && volumeValue > 0 && result.volume === null) {
-                result.volume = volumeValue;
-              }
-            }
-          }
-
-          // Difficulty search
-          const difficultyPattern = /difficulty[^\d]*(\d+(?:\.\d+)?|\w+)%?/i;
-          const difficultyMatch = bodyText.match(difficultyPattern);
-          if (difficultyMatch && difficultyMatch[1]) {
-            const difficultyStr = parseValue(difficultyMatch[1]);
-            if (difficultyStr && difficultyStr !== 'n/a') {
-              const difficultyValue = parseFloat(difficultyStr.replace(/%/g, ''));
-              if (!isNaN(difficultyValue) && difficultyValue >= 0 && difficultyValue <= 100) {
-                result.keyword_difficulty = difficultyValue;
-              }
-            }
-          }
-
-          // COMPREHENSIVE FALLBACK: If global_volume still null, scan all text more thoroughly
-          if (result.global_volume === null) {
-            // Look in script tags for data
-            const scripts = document.querySelectorAll('script:not([src])');
-            scripts.forEach(script => {
-              const content = script.textContent || '';
-              if (content.includes('global') || content.includes('volume')) {
-                const scriptNumbers = content.match(/(\d{1,3}(?:,\d{3})*)/g);
-                if (scriptNumbers && scriptNumbers.length > 0) {
-                  scriptNumbers.forEach(numStr => {
-                    const numVal = parseInt(numStr.replace(/,/g, ''));
-                    if (numVal >= 100 && numVal <= 10000000 && result.global_volume === null) {
-                      result.global_volume = numVal;
-                    }
-                  });
-                }
-              }
-            });
-
-            // Look in all DOM elements for "global volume" patterns
-            if (result.global_volume === null) {
-              const elements = document.querySelectorAll('*');
-              elements.forEach(el => {
-                const text = el.textContent?.toLowerCase() || '';
-                if (text.includes('global volume') || text.includes('global search')) {
-                  const numMatch = el.textContent?.match(/(\d{1,3}(?:,\d{3})*)/);
-                  if (numMatch && numMatch[1] && result.global_volume === null) {
-                    const num = parseInt(numMatch[1].replace(/,/g, ''));
-                    if (num >= 100) {
-                      result.global_volume = num;
-                    }
-                  }
-                }
-              });
-            }
-
-            // Final fallback - assume first large number is global volume if no better match
-            if (result.global_volume === null) {
-              const largeNumbers = bodyText.match(/(\d{4,7}(?:,\d{3})*)/g);
-              if (largeNumbers && largeNumbers.length > 0) {
-                for (const numStr of largeNumbers) {
-                  const num = parseInt(numStr.replace(/,/g, ''));
-                  if (num >= 1000 && num !== result.volume && result.global_volume === null) {
-                    result.global_volume = num;
-                    break;
-                  }
-                }
-              }
-            }
-          }
-
-          // Extract related keywords from tables
-          const tables = document.querySelectorAll('table');
-          const relatedTable = Array.from(tables).find(table =>
-            table.textContent.toLowerCase().includes('keyword') ||
-            table.textContent.toLowerCase().includes('related')
-          ) || document.querySelector('[data-testid*="related"]');
-
-          if (relatedTable) {
-            const rows = relatedTable.querySelectorAll('tr');
-            result.related_keywords = Array.from(rows).slice(1, 11).map(row => {
-              const cells = row.querySelectorAll('td');
-              if (cells.length >= 1) {
-                const keyword = cells[0]?.textContent?.trim();
-                return keyword ? { keyword } : null;
-              }
-              return null;
-            }).filter(item => item !== null);
-          }
+          console.log('Extracted data:', {
+            keyword: result.keyword,
+            volume: result.volume,
+            keyword_difficulty: result.keyword_difficulty,
+            global_volume: result.global_volume
+          });
 
         } catch (error) {
           console.error('Error extracting Keyword Overview data:', error);
