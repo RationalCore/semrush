@@ -1,5 +1,5 @@
 const express = require('express');
-const { SemrushScraper } = require('./semrush-scraper-final-universal');
+const { SemrushScraper } = require('./scraper');
 
 const app = express();
 const port = 3850;
@@ -12,7 +12,7 @@ const scraper = new SemrushScraper();
 
 async function initScraper() {
   try {
-    console.log('🚀 Initializing SEMrush Final Universal scraper...');
+    console.log('🚀 Initializing SEMrush scraper...');
     await scraper.initialize();
     console.log('✅ Scraper ready!');
   } catch (error) {
@@ -47,12 +47,7 @@ app.get('/keyword-magic', async (req, res) => {
       }));
 
       console.log(`✅ SUCCESS: ${keywords.length} keywords returned in ${duration}ms`);
-
-      // Show sample in console with extracted data
-      const sample = keywords.slice(0, 2).map(k =>
-        `"${k.Keyword}" (${k.Volume} vol, $${k['CPC (USD)']} CPC)`
-      ).join(' | ');
-      console.log(`📋 Sample: ${sample}`);
+      console.log('Sample:', keywords.slice(0, 3));
 
       res.json(keywords);
     } else {
@@ -69,48 +64,13 @@ app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
-    scraper: 'semrush-keyword-magic-final-universal',
+    scraper: 'semrush-scraper',
     version: '1.0.0'
   });
 });
 
-app.get('/debug', async (req, res) => {
-  const keyword = req.query.keyword || req.query.q;
-  if (!keyword) {
-    return res.status(400).json({ error: 'Keyword parameter required. Use ?keyword=your-keyword' });
-  }
-
-  console.log(`🔍 Debug test for: "${keyword}"`);
-
-  try {
-    const result = await scraper.getKeywordMagic(keyword, 5);
-    res.json({
-      keyword: keyword,
-      success: result.success,
-      data_found: result.data?.suggestions?.length || 0,
-      sample: result.data?.suggestions?.slice(0, 2) || []
-    });
-  } catch (error) {
-    res.status(500).json({ error: error.message });
-  }
-});
-
 app.listen(port, () => {
-  console.log(`🚀 SEMrush Final Universal API Server running on port ${port}`);
-  console.log(`🔗 Health: http://localhost:${port}/health`);
+  console.log(`🚀 SEMrush API server running on port ${port}`);
   console.log(`🔗 Keywords: http://localhost:${port}/keyword-magic?keyword=your-keyword`);
-  console.log(`🔗 Debug: http://localhost:${port}/debug?keyword=your-keyword`);
-  console.log();
-  console.log('🎯 UNIVERSAL PARSER: No hardcoded data!');
-  console.log('   - Works with any keyword');
-  console.log('   - Uses learned SEMrush patterns');
-  console.log('   - No API keys required');
-  console.log();
-  console.log('📝 PRODUCTION READY! 🚀');
-});
-
-process.on('SIGINT', async () => {
-  console.log('Gracefully shutting down...');
-  await scraper.close();
-  process.exit(0);
+  console.log('📝 No API keys required - works with browser automation');
 });
